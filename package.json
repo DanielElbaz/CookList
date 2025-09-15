@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@google/gemini-cli": "^0.4.1",
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^17.2.2"
+  }, 
+  "type": "module"
+}
