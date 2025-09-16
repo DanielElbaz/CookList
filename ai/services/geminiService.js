@@ -2,8 +2,6 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import dotenv from "dotenv";
 dotenv.config();
 
-console.log("Loaded GEMINI_API_KEY:", process.env.GEMINI_API_KEY?.slice(0, 5) + "...");
-
 class GeminiService {
   constructor() {
     const apiKey = process.env.GEMINI_API_KEY;
