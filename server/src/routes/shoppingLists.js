@@ -1,6 +1,6 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
-const shoppingListController = require('../controllers/shoppingListController');
+import * as shoppingListController from '../controllers/shoppingListController.js';
 
 // Build a new shopping list from recipes
 router.post('/build', shoppingListController.buildList);
@@ -16,4 +16,4 @@ router.put('/:id/items/:itemId', shoppingListController.updateItem);
 // Update the status of a shopping list
 router.put('/:id/status', shoppingListController.updateStatus);
 
-module.exports = router;
+export default router;

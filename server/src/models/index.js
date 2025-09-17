@@ -1,5 +1,5 @@
 
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 function connectMongo(uri) {
   if (!uri) throw new Error('Missing MONGODB_URI');
@@ -7,5 +7,5 @@ function connectMongo(uri) {
   return mongoose.connect(uri, { autoIndex: true });
 }
 
-module.exports = { connectMongo };
+export { connectMongo };
 

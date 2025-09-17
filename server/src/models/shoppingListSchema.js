@@ -1,4 +1,4 @@
-const { Schema, model, Types } = require('mongoose');
+import { Schema, model, Types } from 'mongoose';
 
 const ListItemSchema = new Schema({
     ingredientId: { type: Types.ObjectId, ref: 'Ingredient', required: true },
@@ -19,4 +19,4 @@ const ShoppingListSchema = new Schema({
 }, { timestamps: true });
 
 const ShoppingList = model('ShoppingList', ShoppingListSchema);
-module.exports = ShoppingList;
+export default ShoppingList;

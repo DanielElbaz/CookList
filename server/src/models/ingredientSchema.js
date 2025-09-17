@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose");
+import { Schema, model } from "mongoose";
 
 const DEPTS = [
   "פירות וירקות",
@@ -20,5 +20,6 @@ const IngredientSchema = new Schema({
 },{ _id: true })
 
 const Ingredient = model('Ingredient', IngredientSchema);
-module.exports = Ingredient
-module.exports.DEPTS = DEPTS;
+export default Ingredient
+const _DEPTS = DEPTS;
+export { _DEPTS as DEPTS };
