@@ -12,8 +12,8 @@ const DEPTS = [
 ];
 
 const IngredientSchema = new Schema({
-  name: { type: String, required: true, trim: true },
-  canonicalName: { type: String, required: true, trim: true, unique: true },
+  name: { type: String, required: true, trim: true,unique: true },
+  canonicalName: { type: String, required: true, trim:true },
   tags: { type: [String], default: [] },
   dept: { type: String, enum: DEPTS, required: true },
 

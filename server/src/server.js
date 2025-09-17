@@ -16,6 +16,19 @@ connectMongo(process.env.MONGODB_URI)
 app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
 app.use(express.json());
 
+const Ingredient = require('./models/ingredientSchema');
+
+app.get('/_debug/ingredient/:id', async (req, res) => {
+  const ing = await Ingredient.findById(req.params.id).lean();
+  res.json({
+    uri: process.env.MONGODB_URI,
+    db:Ingredient.db.name,
+    collection:Ingredient.collection.name,
+    exists: !!ing,
+    ing
+  });
+});
+
 // Mount the recipe routes
 app.use('/recipes', recipeRoutes);
 app.use('/lists', shoppingListRoutes);
