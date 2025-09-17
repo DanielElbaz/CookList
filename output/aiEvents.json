@@ -1,0 +1,2464 @@
+[
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוגת שוקולד ללא גלוטן",
+      "photoUrl": "https://spoonacular.com/recipeImages/716429-556x370.jpg",
+      "tags": [
+        "ללא גלוטן",
+        "קינוח",
+        "טבעוני"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס. משמנים ומקמחים תבנית אפייה בקוטר 24 ס\"מ.",
+        "בקערה גדולה, מערבבים יחד את הקמח, אבקת הקקאו, סודה לשתייה ואבקת אפייה.",
+        "בקערה נפרדת, טורפים יחד את הסוכר, שמן הקוקוס, חלב הסויה ווניל.",
+        "מוסיפים את תערובת הרטובים לתערובת היבשים ולערבבים עד לקבלת תערובת אחידה.",
+        "יוצקים את התערובת לתבנית ואופים למשך 30-35 דקות, או עד שקיסם הננעץ במרכז יוצא נקי.",
+        "מצננים את העוגה לחלוטין לפני ההגשה."
+      ],
+      "ingredients": [
+        {
+          "name": "קמח שקדים",
+          "qty": 200,
+          "unit": "גרם"
+        },
+        {
+          "name": "אבקת קקאו",
+          "qty": 50,
+          "unit": "גרם"
+        },
+        {
+          "name": "סודה לשתייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "אבקת אפייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "סוכר",
+          "qty": 150,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן קוקוס",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "חלב סויה",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "תמצית וניל",
+          "qty": 1,
+          "unit": "יחידה"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 11721,
+    "createdAt": "2025-09-17T11:33:44.217Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "סלט קינואה חגיגי עם עגבניות שרי ופטה",
+      "photoUrl": "https://spoonacular.com/recipeImages/637719-556x370.jpg",
+      "tags": [
+        "טבעוני",
+        "סלט",
+        "בריא"
+      ],
+      "steps": [
+        "בישלו את הקינואה לפי הוראות היצרן.",
+        "שטפו את העגבניות השרי וחתכו לחצאים.",
+        "קצצו את הבצל הסגול דק דק.",
+        "ערבבו בקערה את הקינואה, העגבניות השרי, הבצל הסגול, הפטה, והנענע.",
+        "הוסיפו את שמן הזית, מיץ הלימון, המלח והפלפל.",
+        "ערבבו היטב והגישו."
+      ],
+      "ingredients": [
+        {
+          "name": "קינואה",
+          "qty": 200,
+          "unit": "גרם"
+        },
+        {
+          "name": "עגבניות שרי",
+          "qty": 250,
+          "unit": "גרם"
+        },
+        {
+          "name": "בצל סגול",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "פטה",
+          "qty": 100,
+          "unit": "גרם"
+        },
+        {
+          "name": "נענע",
+          "qty": 20,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 4,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "מיץ לימון",
+          "qty": 2,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "מלח",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 1,
+          "unit": "יחידה"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 5325,
+    "createdAt": "2025-09-17T11:35:47.637Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוגת שוקולד ללא גלוטן",
+      "photoUrl": "https://spoonacular.com/recipeImages/716429-556x370.jpg",
+      "tags": [
+        "קינוח",
+        "ללא גלוטן",
+        "טבעוני"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס. משמנים ומקמחים תבנית אפייה בקוטר 24 ס״מ.",
+        "בקערה גדולה, מערבבים את הקמח, אבקת הקקאו, אבקת האפייה והמלח.",
+        "בקערה נפרדת, טורפים את הסוכר, שמן הקוקוס, חלב הסויה ווניל עד לקבלת תערובת אחידה.",
+        "מוסיפים את תערובת הקמח לתערובת הרטובה ומערבבים עד לקבלת בצק אחיד.",
+        "יוצקים את הבצק לתבנית האפייה ואופים כ-30-35 דקות, או עד שקיסם הננעץ במרכז יוצא נקי.",
+        "מצננים את העוגה לחלוטין לפני ההגשה."
+      ],
+      "ingredients": [
+        {
+          "name": "קמח שקדים",
+          "qty": 150,
+          "unit": "גרם"
+        },
+        {
+          "name": "אבקת קקאו",
+          "qty": 50,
+          "unit": "גרם"
+        },
+        {
+          "name": "אבקת אפייה",
+          "qty": 10,
+          "unit": "גרם"
+        },
+        {
+          "name": "מלח",
+          "qty": 1,
+          "unit": "גרם"
+        },
+        {
+          "name": "סוכר",
+          "qty": 150,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן קוקוס",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "חלב סויה",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "וניל",
+          "qty": 1,
+          "unit": "יחידה"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 5682,
+    "createdAt": "2025-09-17T11:39:17.226Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוגת גזר קלאסית",
+      "photoUrl": "https://spoonacular.com/recipeImages/716429-556x370.jpg",
+      "tags": [
+        "טבעוני",
+        "קינוח",
+        "קל"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס. משמנים ומקמחים תבנית עגולה בקוטר 24 ס\"מ.",
+        "בקערה גדולה, מערבבים יחד את הקמח, סודה לשתייה, אבקת אפייה, קינמון, ג'ינג'ר ומלח.",
+        "בקערה נפרדת, טורפים יחד את השמן, סוכר, סירופ מייפל ווניל.",
+        "מוסיפים את תערובת הרטובים לתערובת היבשים ומערבבים עד שהכל מתחבר.",
+        "לבסוף מוסיפים את הגזר והאגוזים ומערבבים בעדינות.",
+        "יוצקים את התערובת לתבנית ואופים כ-35-40 דקות, או עד שקיסם הננעץ במרכז יוצא נקי."
+      ],
+      "ingredients": [
+        {
+          "name": "קמח",
+          "qty": 250,
+          "unit": "גרם"
+        },
+        {
+          "name": "סודה לשתייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "אבקת אפייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "קינמון",
+          "qty": 2,
+          "unit": "גרם"
+        },
+        {
+          "name": "ג'ינג'ר",
+          "qty": 1,
+          "unit": "גרם"
+        },
+        {
+          "name": "מלח",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן",
+          "qty": 150,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "סוכר",
+          "qty": 200,
+          "unit": "גרם"
+        },
+        {
+          "name": "סירופ מייפל",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "וניל",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "גזר מגורד",
+          "qty": 300,
+          "unit": "גרם"
+        },
+        {
+          "name": "אגוזי מלך",
+          "qty": 100,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 13455,
+    "createdAt": "2025-09-17T11:54:04.592Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוף אפוי ברוטב לימון-שום",
+      "photoUrl": "https://spoonacular.com/recipeImages/716426-556x370.jpg",
+      "tags": [
+        "עוף",
+        "תבשיל",
+        "ללא גלוטן"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס.",
+        "מערבבים בקערה את מיץ הלימון, השום הכתוש, מלח, פלפל, פפריקה מתוקה ואורגנו.",
+        "משרים את נתחי העוף ברוטב הלימון-שום למשך לפחות 30 דקות (רצוי שעה).",
+        "מניחים את נתחי העוף בתבנית אפייה ומכניסים לתנור לחום של 180 מעלות צלזיוס למשך 45-60 דקות, או עד שהעוף מבושל היטב.",
+        "מוציאים את העוף מהתנור ומגישים חם."
+      ],
+      "ingredients": [
+        {
+          "name": "נתחי עוף",
+          "qty": 1,
+          "unit": "ק\"ג"
+        },
+        {
+          "name": "לימון",
+          "qty": 2,
+          "unit": "יחידה"
+        },
+        {
+          "name": "שום",
+          "qty": 4,
+          "unit": "יחידה"
+        },
+        {
+          "name": "מלח",
+          "qty": 10,
+          "unit": "גרם"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "פפריקה מתוקה",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "אורגנו",
+          "qty": 2,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 5471,
+    "createdAt": "2025-09-17T11:56:33.323Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוגת שוקולד ללא גלוטן",
+      "photoUrl": "https://spoonacular.com/recipeImages/716429-556x370.jpg",
+      "tags": [
+        "ללא גלוטן",
+        "קינוח",
+        "טבעוני"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס. משמנים ומקמחים תבנית אפייה בקוטר 24 ס\"מ.",
+        "בקערה גדולה, מערבבים יחד את הקמח, אבקת הקקאו, אבקת הסודה לשתייה, ואבקת האפייה.",
+        "בקערה נפרדת, טורפים יחד את הסוכר, שמן הקוקוס, חלב הסויה, ותמצית הווניל.",
+        "מוסיפים את תערובת הקמח לתערובת הרטובה ומערבבים עד לקבלת תערובת אחידה.",
+        "יוצקים את הבלילה לתבנית האפייה ואופים כ-30-35 דקות, או עד שקיסם הננעץ במרכז העוגה יוצא נקי.",
+        "מצננים את העוגה לחלוטין לפני ההגשה."
+      ],
+      "ingredients": [
+        {
+          "name": "קמח ללא גלוטן",
+          "qty": 250,
+          "unit": "גרם"
+        },
+        {
+          "name": "אבקת קקאו",
+          "qty": 50,
+          "unit": "גרם"
+        },
+        {
+          "name": "אבקת סודה לשתייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "אבקת אפייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "סוכר",
+          "qty": 200,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן קוקוס",
+          "qty": 150,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "חלב סויה",
+          "qty": 150,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "תמצית וניל",
+          "qty": 1,
+          "unit": "יחידה"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 17253,
+    "createdAt": "2025-09-17T11:57:26.038Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוף אפוי ברוטב לימון-שום",
+      "photoUrl": "https://spoonacular.com/recipeImages/716426-556x370.jpg",
+      "tags": [
+        "עוף",
+        "תבשיל",
+        "טבעוני"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס.",
+        "מערבבים בקערה את שמן הזית, מיץ הלימון, השום הכתוש, מלח, פלפל שחור, פפריקה מתוקה ואורגנו.",
+        "מניחים את נתחי העוף בתבנית אפייה, יוצקים מעל את הרוטב ומערבבים היטב.",
+        "אופים בתנור למשך 45-60 דקות, או עד שהעוף מזהיב ומוכן לחלוטין.",
+        "מגישים חם לצד תוספת אהובה - אורז, פירה או סלט ירקות."
+      ],
+      "ingredients": [
+        {
+          "name": "נתחי עוף",
+          "qty": 1,
+          "unit": "ק\"ג"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 50,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "מיץ לימון",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "שום כתוש",
+          "qty": 2,
+          "unit": "יחידה"
+        },
+        {
+          "name": "מלח",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 2,
+          "unit": "גרם"
+        },
+        {
+          "name": "פפריקה מתוקה",
+          "qty": 1,
+          "unit": "גרם"
+        },
+        {
+          "name": "אורגנו",
+          "qty": 1,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 10440,
+    "createdAt": "2025-09-17T11:58:34.236Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוף צלוי ברוטב לימון-זיתים",
+      "photoUrl": "https://spoonacular.com/recipeImages/716429-556x370.jpg",
+      "tags": [
+        "עוף",
+        "ללא גלוטן",
+        "בישול ביתי"
+      ],
+      "steps": [
+        "מחממים תנור ל-200 מעלות צלזיוס.",
+        "מערבבים בקערה את שמן הזית, מיץ הלימון, שום כתוש, מלח, פלפל שחור ופטרוזיליה.",
+        "מניחים את נתחי העוף בתבנית אפייה ויוצקים עליהם את הרוטב מכל הכיוונים.",
+        "מוסיפים את זיתי הקלמטה לתבנית.",
+        "אופים בתנור למשך 40-45 דקות, או עד שהעוף מוכן וזהוב.",
+        "מגישים חם, אפשר לצד אורז או פירה."
+      ],
+      "ingredients": [
+        {
+          "name": "נתחי עוף",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 50,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "מיץ לימון",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "שום",
+          "qty": 2,
+          "unit": "יחידה"
+        },
+        {
+          "name": "מלח",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 2,
+          "unit": "גרם"
+        },
+        {
+          "name": "פטרוזיליה",
+          "qty": 10,
+          "unit": "גרם"
+        },
+        {
+          "name": "זיתי קלמטה",
+          "qty": 100,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 5992,
+    "createdAt": "2025-09-17T12:01:08.948Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוגת שוקולד ללא גלוטן",
+      "photoUrl": "https://spoonacular.com/recipeImages/716429-556x370.jpg",
+      "tags": [
+        "ללא גלוטן",
+        "קינוחים",
+        "טבעוני"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס. משמנים ומקמחים תבנית עגולה בקוטר 24 ס\"מ.",
+        "בקערה גדולה, מערבבים את הקמח, אבקת הקקאו, סודה לשתייה ואבקת אפייה.",
+        "בקערה נפרדת, טורפים את הסוכר, שמן הקוקוס, חלב הסויה, וניל, ומערבבים היטב.",
+        "מוסיפים את תערובת הקמח לתערובת הרטובה ומערבבים עד לקבלת תערובת אחידה.",
+        "יוצקים את התערובת לתבנית ואופים במשך 30-35 דקות, או עד שקיסם הננעץ במרכז יוצא נקי.",
+        "מצננים את העוגה בתבנית לפני ההגשה."
+      ],
+      "ingredients": [
+        {
+          "name": "קמח שקדים",
+          "qty": 200,
+          "unit": "גרם"
+        },
+        {
+          "name": "אבקת קקאו",
+          "qty": 50,
+          "unit": "גרם"
+        },
+        {
+          "name": "סודה לשתייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "אבקת אפייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "סוכר",
+          "qty": 150,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן קוקוס",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "חלב סויה",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "תמצית וניל",
+          "qty": 1,
+          "unit": "יחידה"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 5922,
+    "createdAt": "2025-09-17T12:02:39.650Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "error": "Invalid unit \"כוס\" found in recipe."
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 18796,
+    "createdAt": "2025-09-17T12:24:12.966Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוגת גזר קלאסית",
+      "photoUrl": "https://spoonacular.com/recipeImages/716429-556x370.jpg",
+      "tags": [
+        "קינוח",
+        "טבעוני",
+        "קל"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס. משמנים ומקמחים תבנית עגולה בקוטר 24 ס״מ.",
+        "בקערה גדולה מערבבים את הקמח, הסודה לשתייה, אבקת הקינמון, המלח והסוכר.",
+        "בקערה נפרדת, מערבבים את שמן הקוקוס, חלב הקוקוס, תמצית הווניל וגזר המגורר.",
+        "מוסיפים את תערובת הרטובים לתערובת היבשים ומערבבים עד לקבלת תערובת אחידה.",
+        "יוצקים את התערובת לתבנית ואופים כ-30-35 דקות, או עד שקיסם הננעץ במרכז יוצא נקי.",
+        "מצננים את העוגה לחלוטין לפני ההגשה."
+      ],
+      "ingredients": [
+        {
+          "name": "קמח",
+          "qty": 250,
+          "unit": "גרם"
+        },
+        {
+          "name": "סודה לשתייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "אבקת קינמון",
+          "qty": 2,
+          "unit": "יחידה"
+        },
+        {
+          "name": "מלח",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "סוכר",
+          "qty": 200,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן קוקוס",
+          "qty": 150,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "חלב קוקוס",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "תמצית וניל",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "גזר מגורר",
+          "qty": 250,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 4933,
+    "createdAt": "2025-09-17T12:26:00.357Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוגת גזר קלאסית",
+      "photoUrl": "https://spoonacular.com/recipeImages/716426-556x370.jpg",
+      "tags": [
+        "טבעוני",
+        "קינוח",
+        "קל"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס. משמנים ומקמחים תבנית עגולה בקוטר 24 ס\"מ.",
+        "בקערה גדולה מערבבים את הקמח, הסוכר, אבקת הסודה לשתייה, הקינמון והמלח.",
+        "בקערה נפרדת מערבבים את שמן הקוקוס, חלב הסויה, תמצית הווניל והגזר המגורד.",
+        "מוסיפים את תערובת הרטובים לתערובת היבשים ומערבבים עד לקבלת תערובת אחידה.",
+        "יוצקים את התערובת לתבנית ואופים במשך 35-40 דקות, או עד שקיסם הננעץ במרכז יוצא נקי.",
+        "מצננים את העוגה בתבנית לפני ההגשה."
+      ],
+      "ingredients": [
+        {
+          "name": "קמח",
+          "qty": 200,
+          "unit": "גרם"
+        },
+        {
+          "name": "סוכר",
+          "qty": 150,
+          "unit": "גרם"
+        },
+        {
+          "name": "אבקת סודה לשתייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "קינמון",
+          "qty": 2,
+          "unit": "יחידה"
+        },
+        {
+          "name": "מלח",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "שמן קוקוס",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "חלב סויה",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "תמצית וניל",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "גזר מגורד",
+          "qty": 200,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 4966,
+    "createdAt": "2025-09-17T12:27:47.051Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "סלט קינואה עם עגבניות שרי וגבינת פטה",
+      "photoUrl": "https://spoonacular.com/recipeImages/632571-556x370.jpg",
+      "tags": [
+        "טבעוני",
+        "סלט",
+        "קל"
+      ],
+      "steps": [
+        "בישול קינואה: לבשל 1 כוס קינואה לפי הוראות היצרן.",
+        "הכנת הירקות: לחתוך את העגבניות השרי לחצאים. לקצוץ את הבצל הסגול דק דק.",
+        "ערבוב הסלט: בקערה גדולה, לערבב את הקינואה המבושלת, העגבניות השרי, הבצל הסגול,  פטה, ומיץ לימון.",
+        "תיבול: להוסיף מלח, פלפל שחור, שמן זית ונענע קצוצה לפי הטעם.",
+        "קירור: להכניס את הסלט למקרר למשך 30 דקות לפחות, על מנת לאפשר לטעמים להתערבב."
+      ],
+      "ingredients": [
+        {
+          "name": "קינואה",
+          "qty": 1,
+          "unit": "כוס"
+        },
+        {
+          "name": "עגבניות שרי",
+          "qty": 250,
+          "unit": "גרם"
+        },
+        {
+          "name": "בצל סגול",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "גבינת פטה",
+          "qty": 100,
+          "unit": "גרם"
+        },
+        {
+          "name": "מיץ לימון",
+          "qty": 2,
+          "unit": "כף"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 2,
+          "unit": "כף"
+        },
+        {
+          "name": "נענע",
+          "qty": 10,
+          "unit": "גרם"
+        },
+        {
+          "name": "מלח",
+          "qty": 1,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 1,
+          "unit": "מ\"ל"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 4558,
+    "createdAt": "2025-09-17T12:30:09.503Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוגת גזר ושוקולד צמחונית",
+      "photoUrl": "https://spoonacular.com/recipeImages/716447-556x370.jpg",
+      "tags": [
+        "צמחוני",
+        "קינוח",
+        "קל"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס. משמנים ומקמחים תבנית עגולה בקוטר 24 ס\"מ.",
+        "בקערה גדולה, מערבבים יחד את הקמח, הסודה לשתייה, אבקת הקינמון, המלח והסוכר.",
+        "בקערה נפרדת, טורפים את הביצים, מוסיפים את שמן הקוקוס, המים, תמצית הווניל ודבש. מערבבים היטב.",
+        "מוסיפים את תערובת הרטובה לתערובת היבשה ומערבבים עד לקבלת בלילה אחידה. מוסיפים את הגזר המגורר והשוקולד צ'יפס ומערבבים בעדינות.",
+        "יוצקים את הבלילה לתבנית ומפזרים מעל אגוזי מלך קצוצים (אופציונלי).",
+        "אופים בתנור שחומם מראש למשך 35-40 דקות, או עד שקיסם הננעץ במרכז העוגה יוצא נקי."
+      ],
+      "ingredients": [
+        {
+          "name": "קמח",
+          "qty": 200,
+          "unit": "גרם"
+        },
+        {
+          "name": "סודה לשתייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "קינמון",
+          "qty": 2,
+          "unit": "גרם"
+        },
+        {
+          "name": "מלח",
+          "qty": 1,
+          "unit": "גרם"
+        },
+        {
+          "name": "סוכר",
+          "qty": 150,
+          "unit": "גרם"
+        },
+        {
+          "name": "ביצים",
+          "qty": 2,
+          "unit": "יחידה"
+        },
+        {
+          "name": "שמן קוקוס",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "מים",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "תמצית וניל",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "דבש",
+          "qty": 50,
+          "unit": "גרם"
+        },
+        {
+          "name": "גזר מגורר",
+          "qty": 200,
+          "unit": "גרם"
+        },
+        {
+          "name": "שוקולד צ'יפס",
+          "qty": 100,
+          "unit": "גרם"
+        },
+        {
+          "name": "אגוזי מלך קצוצים",
+          "qty": 50,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 6080,
+    "createdAt": "2025-09-17T12:30:59.575Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "סלט קינואה עם עגבניות שרי וגבינת פטה",
+      "photoUrl": "https://spoonacular.com/recipeImages/632776-556x370.jpg",
+      "tags": [
+        "טבעוני",
+        "קל",
+        "סלט"
+      ],
+      "steps": [
+        "בישול קינואה: לבשל קינואה לפי הוראות היצרן.",
+        "הכנת הסלט: לחתוך את העגבניות שרי לחצאים.",
+        "ערבוב: לערבב את הקינואה המבושלת, העגבניות, המלפפונים והפטה בקערה.",
+        "תיבול: להוסיף מלח, פלפל שחור, שמן זית ומיץ לימון לפי הטעם.",
+        "קישוט: לפזר מעל פטרוזיליה קצוצה."
+      ],
+      "ingredients": [
+        {
+          "name": "קינואה",
+          "qty": 1,
+          "unit": "כוס"
+        },
+        {
+          "name": "עגבניות שרי",
+          "qty": 250,
+          "unit": "גרם"
+        },
+        {
+          "name": "מלפפונים",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "גבינת פטה",
+          "qty": 100,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 2,
+          "unit": "כף"
+        },
+        {
+          "name": "מיץ לימון",
+          "qty": 1,
+          "unit": "כף"
+        },
+        {
+          "name": "מלח",
+          "qty": 1,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 1,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "פטרוזיליה",
+          "qty": 1,
+          "unit": "יחידה"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 5030,
+    "createdAt": "2025-09-17T12:31:43.176Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "סלט קינואה עם עגבניות שרי וגבינה פטה",
+      "photoUrl": "https://spoonacular.com/recipeImages/632678-556x370.jpg",
+      "tags": [
+        "טבעוני",
+        "סלט",
+        "ארוחת צהריים"
+      ],
+      "steps": [
+        "בישול קינואה: לבשל 1 כוס קינואה לפי הוראות היצרן.",
+        "הכנת הירקות: לחתוך את העגבניות השרי לחצאים, את המלפפון לקוביות קטנות ואת הבצל הסגול לפרוסות דקות.",
+        "ערבוב הסלט: בקערה גדולה, לערבב את הקינואה המבושלת, העגבניות השרי, המלפפון, הבצל הסגול, הפטה המפוררת והפטרוזיליה.",
+        "הכנת הרוטב: לערבב את שמן הזית, מיץ הלימון, מלח ופלפל שחור.",
+        "הוספת הרוטב: לשפוך את הרוטב מעל הסלט ולערבב בעדינות."
+      ],
+      "ingredients": [
+        {
+          "name": "קינואה",
+          "qty": 1,
+          "unit": "כוס"
+        },
+        {
+          "name": "עגבניות שרי",
+          "qty": 250,
+          "unit": "גרם"
+        },
+        {
+          "name": "מלפפון",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "בצל סגול",
+          "qty": 0.5,
+          "unit": "יחידה"
+        },
+        {
+          "name": "גבינה פטה",
+          "qty": 100,
+          "unit": "גרם"
+        },
+        {
+          "name": "פטרוזיליה",
+          "qty": 20,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 4,
+          "unit": "כף"
+        },
+        {
+          "name": "מיץ לימון",
+          "qty": 2,
+          "unit": "כף"
+        },
+        {
+          "name": "מלח",
+          "qty": 1,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 1,
+          "unit": "מ\"ל"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 4761,
+    "createdAt": "2025-09-17T12:31:50.361Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "סלט קינואה אדום-לבן",
+      "photoUrl": "https://spoonacular.com/recipeImages/632372-556x370.jpg",
+      "tags": [
+        "טבעוני",
+        "קל",
+        "סלט"
+      ],
+      "steps": [
+        "בשלו את הקינואה לפי הוראות היצרן.",
+        "בנתיים, חתכו את המלפפון, העגבניות והבצל לקוביות קטנות.",
+        "ערבבו את הקינואה המבושלת עם המלפפון, העגבניות והבצל בקערה גדולה.",
+        "הוסיפו את שמן הזית, מיץ הלימון, המלח והפלפל.",
+        "ערבבו היטב והגישו."
+      ],
+      "ingredients": [
+        {
+          "name": "קינואה",
+          "qty": 1,
+          "unit": "כוס"
+        },
+        {
+          "name": "מלפפון",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "עגבניות",
+          "qty": 2,
+          "unit": "יחידה"
+        },
+        {
+          "name": "בצל סגול",
+          "qty": 0.5,
+          "unit": "יחידה"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 2,
+          "unit": "כף"
+        },
+        {
+          "name": "מיץ לימון",
+          "qty": 1,
+          "unit": "כף"
+        },
+        {
+          "name": "מלח",
+          "qty": 1,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 1,
+          "unit": "מ\"ל"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 3632,
+    "createdAt": "2025-09-17T12:31:56.540Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוף בתנור עם תפוחי אדמה ולימון",
+      "photoUrl": "https://spoonacular.com/recipeImages/636425-556x370.jpg",
+      "tags": [
+        "עוף",
+        "תנור",
+        "ללא גלוטן"
+      ],
+      "steps": [
+        "מחממים תנור ל-200 מעלות צלזיוס.",
+        "קוצצים את תפוחי האדמה לקוביות בגודל בינוני.",
+        "מערבבים את תפוחי האדמה, העוף, מיץ לימון, שמן זית, מלח ופלפל בקערה גדולה.",
+        "מניחים את תערובת העוף ותפוחי האדמה בתבנית אפייה.",
+        "אופים בתנור למשך 45-60 דקות, או עד שהעוף מוכן ותפוחי האדמה רכים.",
+        "מגישים חם."
+      ],
+      "ingredients": [
+        {
+          "name": "עוף",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "תפוחי אדמה",
+          "qty": 500,
+          "unit": "גרם"
+        },
+        {
+          "name": "לימון",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 20,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "מלח",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 2,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 3605,
+    "createdAt": "2025-09-17T12:32:14.716Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "סלט קינואה חגיגי עם עגבניות שרי וגבינת פטה",
+      "photoUrl": "https://spoonacular.com/recipeImages/632751-312x231.jpg",
+      "tags": [
+        "טבעוני",
+        "סלט",
+        "קל"
+      ],
+      "steps": [
+        "בשלב ראשון, לבשל את הקינואה לפי הוראות היצרן.",
+        "לחתוך את העגבניות שרי לחצאים.",
+        "לערבב את הקינואה המבושלת עם העגבניות, המלפפונים, הבצל והפטה.",
+        "להוסיף את שמן הזית, מיץ הלימון, המלח והפלפל.",
+        "לערבב היטב ולפזר מעל פטרוזיליה קצוצה.",
+        "לקרר במקרר לפחות 30 דקות לפני ההגשה."
+      ],
+      "ingredients": [
+        {
+          "name": "קינואה",
+          "qty": 1,
+          "unit": "כוס"
+        },
+        {
+          "name": "עגבניות שרי",
+          "qty": 250,
+          "unit": "גרם"
+        },
+        {
+          "name": "מלפפונים",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "בצל סגול",
+          "qty": 0.5,
+          "unit": "יחידה"
+        },
+        {
+          "name": "גבינת פטה",
+          "qty": 100,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 2,
+          "unit": "כף"
+        },
+        {
+          "name": "מיץ לימון",
+          "qty": 1,
+          "unit": "כף"
+        },
+        {
+          "name": "מלח",
+          "qty": 1,
+          "unit": "כף"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 1,
+          "unit": "כף"
+        },
+        {
+          "name": "פטרוזיליה",
+          "qty": 20,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 4877,
+    "createdAt": "2025-09-17T12:33:48.000Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוף צלוי ברוטב לימון-שום",
+      "photoUrl": "https://spoonacular.com/recipeImages/637540-556x370.jpg",
+      "tags": [
+        "עוף",
+        "ללא גלוטן",
+        "בישול"
+      ],
+      "steps": [
+        "מחממים תנור ל-200 מעלות צלזיוס.",
+        "מערבבים בקערה את מיץ הלימון, השום הכתוש, השמן, מלח, פלפל שחור, ובהרט.",
+        "מניחים את נתחי העוף בקערה ומערבבים היטב עד שהם מצופים ברוטב.",
+        "מניחים את העוף בתבנית אפייה ומכניסים לתנור לאפייה של 45-60 דקות, או עד שהעוף מוכן ומזהיב.",
+        "מוציאים את העוף מהתנור ומגישים חם."
+      ],
+      "ingredients": [
+        {
+          "name": "עוף (שוקיים או ירכיים)",
+          "qty": 1,
+          "unit": "ק\"ג"
+        },
+        {
+          "name": "מיץ לימון",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "שום כתוש",
+          "qty": 4,
+          "unit": "יחידה"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 50,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "מלח",
+          "qty": 10,
+          "unit": "גרם"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "בהרט",
+          "qty": 10,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 10649,
+    "createdAt": "2025-09-17T12:35:26.227Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוף אפוי ברוטב לימון-שום",
+      "photoUrl": "https://spoonacular.com/recipeImages/716429-312x231.jpg",
+      "tags": [
+        "עוף",
+        "תבשיל",
+        "ללא גלוטן"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס.",
+        "מערבבים בקערה את מיץ הלימון, השום הכתוש, מלח, פלפל שחור, פפריקה מתוקה ואורגנו.",
+        "משרים את נתחי העוף ברוטב למשך לפחות 30 דקות (רצוי שעה).",
+        "מניחים את נתחי העוף בתבנית אפייה ומכניסים לתנור לאפייה של 45-60 דקות, או עד שהעוף מבושל היטב ומוזהב.",
+        "מגישים חם עם תוספת לבחירה (אורז, תפוחי אדמה, סלט)."
+      ],
+      "ingredients": [
+        {
+          "name": "נתחי עוף",
+          "qty": 1,
+          "unit": "ק\"ג"
+        },
+        {
+          "name": "לימון",
+          "qty": 2,
+          "unit": "יחידה"
+        },
+        {
+          "name": "שום",
+          "qty": 4,
+          "unit": "יחידה"
+        },
+        {
+          "name": "מלח",
+          "qty": 10,
+          "unit": "גרם"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "פפריקה מתוקה",
+          "qty": 10,
+          "unit": "גרם"
+        },
+        {
+          "name": "אורגנו",
+          "qty": 5,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 3927,
+    "createdAt": "2025-09-17T12:35:44.211Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוגת גזר קלאסית",
+      "photoUrl": "https://spoonacular.com/recipeImages/716429-556x370.jpg",
+      "tags": [
+        "קינוח",
+        "צמחוני",
+        "קל"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס. משמנים ומקמחים תבנית עגולה בקוטר 24 ס\"מ.",
+        "בקערה גדולה מערבבים יחד את הקמח, הסודה לשתייה, האבקת אפייה והקינמון.",
+        "בקערה נפרדת, מערבבים יחד את הסוכר, השמן, הביצים, והוניל. מוסיפים את תערובת הקמח לתערובת הרטובה ומערבבים עד לקבלת תערובת אחידה.",
+        "מוסיפים את הגזר המגורר והאגוזים לתערובת ומערבבים בעדינות.",
+        "יוצקים את הבלילה לתבנית ואופים בתנור שחומם מראש למשך 35-40 דקות, או עד שקיסם הננעץ במרכז יוצא נקי.",
+        "מצננים את העוגה בתבנית מספר דקות לפני שהופכים אותה לצלחת הגשה."
+      ],
+      "ingredients": [
+        {
+          "name": "קמח",
+          "qty": 250,
+          "unit": "גרם"
+        },
+        {
+          "name": "סוכר",
+          "qty": 200,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן",
+          "qty": 150,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "ביצים",
+          "qty": 3,
+          "unit": "יחידה"
+        },
+        {
+          "name": "גזר מגורר",
+          "qty": 200,
+          "unit": "גרם"
+        },
+        {
+          "name": "אגוזים קצוצים",
+          "qty": 50,
+          "unit": "גרם"
+        },
+        {
+          "name": "וניל",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "קינמון",
+          "qty": 2,
+          "unit": "גרם"
+        },
+        {
+          "name": "סודה לשתייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "אבקת אפייה",
+          "qty": 1,
+          "unit": "יחידה"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 5052,
+    "createdAt": "2025-09-17T12:35:53.220Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "סלט קינואה אדום-לבן",
+      "photoUrl": "https://spoonacular.com/recipeImages/632788-312x231.jpg",
+      "tags": [
+        "טבעוני",
+        "קל",
+        "סלט"
+      ],
+      "steps": [
+        "בישול קינואה: לבשל 1 כוס קינואה לפי הוראות היצרן.",
+        "הכנת הירקות: לחתוך את המלפפון, העגבניות והבצל לקוביות קטנות.",
+        "ערבוב הסלט: בקערה גדולה, לערבב את הקינואה המבושלת, המלפפון, העגבניות, הבצל, הפטרוזיליה והלימון.",
+        "תיבול: להוסיף מלח, פלפל שחור לפי הטעם ושמן זית.",
+        "קישוט: לפזר מעל מעט פטרוזיליה קצוצה."
+      ],
+      "ingredients": [
+        {
+          "name": "קינואה",
+          "qty": 1,
+          "unit": "כוס"
+        },
+        {
+          "name": "מלפפון",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "עגבניות",
+          "qty": 2,
+          "unit": "יחידה"
+        },
+        {
+          "name": "בצל סגול",
+          "qty": 0.5,
+          "unit": "יחידה"
+        },
+        {
+          "name": "פטרוזיליה",
+          "qty": 20,
+          "unit": "גרם"
+        },
+        {
+          "name": "לימון",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "מלח",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 2,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 20,
+          "unit": "מ\"ל"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 4446,
+    "createdAt": "2025-09-17T12:36:28.145Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוגת גזר קלאסית",
+      "photoUrl": "https://spoonacular.com/recipeImages/716426-556x370.jpg",
+      "tags": [
+        "עוגות",
+        "קינוחים",
+        "טבעוני"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס. משמנים ומקמחים תבנית עגולה בקוטר 24 ס\"מ.",
+        "בקערה גדולה מערבבים את הקמח, הסוכר, אבקת הסודה לשתייה, הקינמון והמלח.",
+        "בקערה נפרדת מערבבים את שמן הקוקוס, חלב הסויה, תמצית הוניל והגזר המגורר.",
+        "מוסיפים את תערובת הרטובים לתערובת היבשים ומערבבים עד לקבלת תערובת אחידה.",
+        "יוצקים את התערובת לתבנית ואופים כ-35-40 דקות, או עד שקיסם הננעץ במרכז יוצא יבש.",
+        "מצננים את העוגה בתבנית לפני ההגשה."
+      ],
+      "ingredients": [
+        {
+          "name": "קמח",
+          "qty": 250,
+          "unit": "גרם"
+        },
+        {
+          "name": "סוכר",
+          "qty": 200,
+          "unit": "גרם"
+        },
+        {
+          "name": "אבקת סודה לשתייה",
+          "qty": 2,
+          "unit": "יחידה"
+        },
+        {
+          "name": "קינמון",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "מלח",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן קוקוס",
+          "qty": 150,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "חלב סויה",
+          "qty": 150,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "תמצית וניל",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "גזר מגורר",
+          "qty": 300,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 11006,
+    "createdAt": "2025-09-17T12:36:43.675Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוף אפוי בתפוחי אדמה ורוזמרין",
+      "photoUrl": "https://spoonacular.com/recipeImages/632495-556x370.jpg",
+      "tags": [
+        "עוף",
+        "תנור",
+        "ללא גלוטן"
+      ],
+      "steps": [
+        "מחממים תנור ל-200 מעלות צלזיוס.",
+        "קוצצים את תפוחי האדמה לחתיכות בגודל בינוני.",
+        "מניחים את תפוחי האדמה, העוף, הרוזמרין, השום והשמן בתבנית אפייה.",
+        "מתבלים במלח, פלפל שחור ופטרוזיליה.",
+        "אופים בתנור למשך 45-60 דקות, או עד שהעוף מוכן ותפוחי האדמה רכים."
+      ],
+      "ingredients": [
+        {
+          "name": "שוקי עוף",
+          "qty": 4,
+          "unit": "יחידה"
+        },
+        {
+          "name": "תפוחי אדמה",
+          "qty": 1,
+          "unit": "ק\"ג"
+        },
+        {
+          "name": "רוזמרין",
+          "qty": 2,
+          "unit": "יחידה"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 50,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "שום",
+          "qty": 4,
+          "unit": "יחידה"
+        },
+        {
+          "name": "מלח",
+          "qty": 10,
+          "unit": "גרם"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "פטרוזיליה",
+          "qty": 10,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 3967,
+    "createdAt": "2025-09-17T12:36:51.415Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוגת גזר קלאסית",
+      "photoUrl": "https://spoonacular.com/recipeImages/716429-556x370.jpg",
+      "tags": [
+        "קינוח",
+        "טבעוני",
+        "קל"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס. משמנים ומקמחים תבנית עגולה בקוטר 24 ס\"מ.",
+        "בקערה גדולה, מערבבים את הקמח, הסודה לשתייה, האבקת אפייה והקינמון.",
+        "בקערה נפרדת, טורפים את שמן הקוקוס, הסוכר, ביצת הפשתן (1 כף פשתן טחון + 3 כפות מים) , והתמצית וניל.",
+        "מוסיפים את תערובת הקמח לתערובת הרטובה ומערבבים עד לקבלת תערובת אחידה. ",
+        "מוסיפים את הגזר המגורר, האגוזים והצימוקים ומערבבים בעדינות.",
+        "אופים בתנור החם במשך 35-40 דקות, או עד שקיסם הננעץ במרכז העוגה יוצא נקי."
+      ],
+      "ingredients": [
+        {
+          "name": "קמח חיטה מלא",
+          "qty": 250,
+          "unit": "גרם"
+        },
+        {
+          "name": "סודה לשתייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "אבקת אפייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "קינמון",
+          "qty": 2,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן קוקוס",
+          "qty": 150,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "סוכר חום",
+          "qty": 200,
+          "unit": "גרם"
+        },
+        {
+          "name": "ביצת פשתן (1 כף פשתן טחון + 3 כפות מים)",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "תמצית וניל",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "גזר מגורר",
+          "qty": 250,
+          "unit": "גרם"
+        },
+        {
+          "name": "אגוזי מלך קצוצים",
+          "qty": 50,
+          "unit": "גרם"
+        },
+        {
+          "name": "צימוקים",
+          "qty": 50,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 5811,
+    "createdAt": "2025-09-17T12:37:50.505Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוף אפוי ברוטב לימון-שום",
+      "photoUrl": "https://spoonacular.com/recipeImages/716426-556x370.jpg",
+      "tags": [
+        "עוף",
+        "תנור",
+        "ללא גלוטן"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס.",
+        "מערבבים בקערה את השום הכתוש, מיץ הלימון, מלח, פלפל, פפריקה מתוקה.",
+        "מורחים את תערובת הלימון-שום על נתחי העוף מכל הצדדים.",
+        "מניחים את נתחי העוף בתבנית אפייה מרופדת בנייר אפייה.",
+        "אופים בתנור למשך 40-45 דקות, או עד שהעוף מוכן ומוזהב.",
+        "מגישים חם."
+      ],
+      "ingredients": [
+        {
+          "name": "עוף (שוקיים או חזה)",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "שום",
+          "qty": 4,
+          "unit": "יחידה"
+        },
+        {
+          "name": "לימון",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "מלח",
+          "qty": 10,
+          "unit": "גרם"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "פפריקה מתוקה",
+          "qty": 5,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 3611,
+    "createdAt": "2025-09-17T12:38:25.632Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוף צלוי בתנור עם תפוחי אדמה וירקות שורש",
+      "photoUrl": "https://spoonacular.com/recipeImages/636174-556x370.jpg",
+      "tags": [
+        "עוף",
+        "תנור",
+        "ללא גלוטן"
+      ],
+      "steps": [
+        "1. לחמם תנור ל-200 מעלות צלזיוס.",
+        "2. לקלף ולשטוף את תפוחי האדמה וירקות השורש (גזר, בטטה, בצל) ולחתוך לחתיכות בגודל בינוני.",
+        "3. להניח את תפוחי האדמה והירקות בתבנית אפייה גדולה, לזרות מלח, פלפל שחור וגבעות טימין.",
+        "4. לערבב את הירקות היטב, להוסיף את נתחי העוף ולהניח אותם מעל הירקות.",
+        "5. לצלות בתנור למשך 45-60 דקות, עד שהעוף מבושל היטב והירקות רכים.",
+        "6. להגיש חם."
+      ],
+      "ingredients": [
+        {
+          "name": "עוף",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "תפוחי אדמה",
+          "qty": 500,
+          "unit": "גרם"
+        },
+        {
+          "name": "גזר",
+          "qty": 2,
+          "unit": "יחידה"
+        },
+        {
+          "name": "בטטה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "בצל",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "מלח",
+          "qty": 10,
+          "unit": "גרם"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "טימין",
+          "qty": 1,
+          "unit": "יחידה"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 10558,
+    "createdAt": "2025-09-17T12:38:38.873Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוגת שוקולד ללא גלוטן",
+      "photoUrl": "https://spoonacular.com/recipeImages/716429-556x370.jpg",
+      "tags": [
+        "ללא גלוטן",
+        "קינוח",
+        "טבעוני"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס. משמנים ומקמחים תבנית עגולה בקוטר 24 ס\"מ.",
+        "בקערה גדולה, מערבבים את הקמח ללא גלוטן, אבקת הקקאו, סודה לשתייה ואבקת אפייה.",
+        "בקערה נפרדת, טורפים את הסוכר, השמן, החלב הצמחי, וניל ותמצית שוקולד.",
+        "מוסיפים את תערובת הקמח לתערובת הרטובה ומערבבים עד לקבלת תערובת אחידה.",
+        "יוצקים את הבלילה לתבנית ואופים כ-30-35 דקות, או עד שקיסם הננעץ במרכז יוצא נקי.",
+        "מצננים לחלוטין לפני ההגשה."
+      ],
+      "ingredients": [
+        {
+          "name": "קמח ללא גלוטן",
+          "qty": 200,
+          "unit": "גרם"
+        },
+        {
+          "name": "אבקת קקאו",
+          "qty": 50,
+          "unit": "גרם"
+        },
+        {
+          "name": "סוכר",
+          "qty": 150,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "חלב צמחי",
+          "qty": 100,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "ביצים",
+          "qty": 0,
+          "unit": "יחידה"
+        },
+        {
+          "name": "תמצית וניל",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "תמצית שוקולד",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "סודה לשתייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "אבקת אפייה",
+          "qty": 1,
+          "unit": "יחידה"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 5001,
+    "createdAt": "2025-09-17T12:38:46.671Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "סלט קינואה עם עגבניות שרי וגבינת פטה",
+      "photoUrl": "https://spoonacular.com/recipeImages/632829-312x231.jpg",
+      "tags": [
+        "טבעוני",
+        "קל",
+        "סלט"
+      ],
+      "steps": [
+        "בשלב הראשון, מבשלים את הקינואה לפי הוראות היצרן.  מסננים היטב ומצננים.",
+        "חותכים את העגבניות שרי לרבעים.",
+        "מבשלים את המלפפונים. חותכים לקוביות קטנות.",
+        "מערבבים בקערה את הקינואה, העגבניות, המלפפונים,  הבצל והפטה.",
+        "מתבלים במלח, פלפל, שמן זית ומיץ לימון לפי הטעם.",
+        "מגישים ומקשטים בעלי בזיליקום טריים (אופציונלי)."
+      ],
+      "ingredients": [
+        {
+          "name": "קינואה",
+          "qty": 150,
+          "unit": "גרם"
+        },
+        {
+          "name": "עגבניות שרי",
+          "qty": 250,
+          "unit": "גרם"
+        },
+        {
+          "name": "מלפפונים",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "בצל סגול",
+          "qty": 0.5,
+          "unit": "יחידה"
+        },
+        {
+          "name": "גבינת פטה",
+          "qty": 100,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 4,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "מיץ לימון",
+          "qty": 2,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "מלח",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 2,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 11370,
+    "createdAt": "2025-09-17T12:39:05.721Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "עוף אפוי ברוטב לימון-שום",
+      "photoUrl": "https://spoonacular.com/recipeImages/636440-556x370.jpg",
+      "tags": [
+        "עוף",
+        "תבשיל",
+        "ללא גלוטן"
+      ],
+      "steps": [
+        "מחממים תנור ל-180 מעלות צלזיוס.",
+        "מערבבים בקערה את שמן הזית, מיץ הלימון, השום הכתוש, מלח ופלפל.",
+        "מניחים את נתחי העוף בתבנית אפייה ומורחים עליהם את הרוטב היטב.",
+        "אופים בתנור למשך 40-45 דקות, או עד שהעוף מוכן וזהוב.",
+        "מגישים חם לצד תוספת לבחירתכם."
+      ],
+      "ingredients": [
+        {
+          "name": "עוף (שוקיים או נתחים)",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 2,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "מיץ לימון",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "שום כתוש",
+          "qty": 2,
+          "unit": "יחידה"
+        },
+        {
+          "name": "מלח",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 1,
+          "unit": "גרם"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 10535,
+    "createdAt": "2025-09-17T12:39:31.787Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "סלט קינואה עם עגבניות שרי וגבינה פטה",
+      "photoUrl": "https://spoonacular.com/recipeImages/632562-556x370.jpg",
+      "tags": [
+        "טבעוני",
+        "קל",
+        "סלט"
+      ],
+      "steps": [
+        "בשלו את הקינואה לפי הוראות היצרן.",
+        "שטפו את העגבניות השרי וחתכו לחצאים.",
+        "ערבבו את הקינואה המבושלת, העגבניות השרי, המלפפונים והפטה בקערה.",
+        "הוסיפו את שמן הזית, מיץ הלימון, המלח והפלפל.",
+        "ערבבו היטב ותנו לסלט להתקרר כ-15 דקות לפני ההגשה."
+      ],
+      "ingredients": [
+        {
+          "name": "קינואה",
+          "qty": 1,
+          "unit": "כוס"
+        },
+        {
+          "name": "עגבניות שרי",
+          "qty": 250,
+          "unit": "גרם"
+        },
+        {
+          "name": "מלפפונים",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "גבינה פטה",
+          "qty": 100,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 4,
+          "unit": "כף"
+        },
+        {
+          "name": "מיץ לימון",
+          "qty": 2,
+          "unit": "כף"
+        },
+        {
+          "name": "מלח",
+          "qty": 1,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 1,
+          "unit": "מ\"ל"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 3922,
+    "createdAt": "2025-09-17T12:39:53.665Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "c9de06eae9dcda7791856fc3fd13c9ab4a2911e10ffbd566c52134fcdfb39bcd",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "error": "[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent: [429 Too Many Requests] You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-1.5-flash\",\"location\":\"global\"},\"quotaValue\":\"50\"}]},{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"30s\"}]"
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 66080,
+    "createdAt": "2025-09-17T12:41:24.254Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "92d026eccd7ad4c44d5a55ee249e34ae2109276ac191b5fd63d52a42559ecae1",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You may ONLY use ingredients from the following list: [\"תפוח עץ\",\"אננס\",\"רימון\",\"פלפל\",\"בצל\",\"בצל\",\"חציל\",\"בטטה\",\"כרוב\",\"כרוב\",\"חסה\",\"כוסברה\",\"שמיר\",\"כרישה\",\"שורש פטרוזיליה\",\"קולורבי\",\"קישוא\",\"קישוא\",\"תערובת עלים\",\"חלב\",\"גבינה לבנה\",\"גבינה בולגרית\",\"גבינת צפתית\",\"פרמזן\",\"חמאה\",\"לחם מחמצת\",\"פיתה\",\"עוגה\",\"מלאווח\",\"חזה עוף\",\"סינטה\",\"צלי כתף\",\"בורי\",\"דניס\",\"אמנון\",\"המבורגר\",\"אורז\",\"אורז\",\"קינואה\",\"קינואה\",\"בורגול\",\"פתיתים\",\"פסטה\",\"קמח שקדים\",\"שוקולד צ'יפס\",\"מלח\",\"שום\",\"עדשים\",\"שעועית\",\"טונה שימורים\",\"חומץ\",\"מיונז\",\"חרדל\",\"סורבה\",\"בורקס\",\"מלאווח\",\"מים מוגזים\",\"משקה קל\",\"תה ירוק\",\"קפה\",\"סיידר תפוחים\",\"גויאבה\",\"בלוברי\",\"קשיו\",\"ענבים\",\"ענבים\",\"מנגו\",\"נקטרינה\",\"שזיף\",\"אגס\",\"תות\",\"שקד\",\"בננה\",\"פלפל\",\"שום\",\"גזר\",\"קישוא\",\"תפוח אדמה\",\"פטרוזיליה\",\"רוקט\",\"פטריות\",\"דלורית\",\"שמנת לבישול\",\"יוגורט\",\"גבינה צהובה\",\"גאודה\",\"לבנה\",\"מסקרפונה\",\"משקה יוגורט\",\"גבינת שמנת\",\"טופו\",\"משקה שקדים\",\"לבנה\",\"לחם לבן\",\"חלה\",\"פיתה\",\"פוקאצ'ה\",\"קרואסון\",\"קרואסון\",\"לחם שיפון\",\"ג'חנון\",\"שוקיים עוף\",\"פסטרמה הודו\",\"כבד עוף\",\"טונה\",\"שרימפס\",\"כבד אווז\",\"טלה\",\"פסטה\",\"פסטה\",\"סודה לשתייה\",\"סוכר\",\"כמון\",\"קינמון\",\"זעתר\",\"שמן זית\",\"חומוס\",\"עדשים\",\"תירס שימורים\",\"טונה שימורים\",\"מלפפון חמוץ\",\"חומץ\",\"דבש\",\"סילאן\",\"אבקת מרק\",\"בצק סיגר\",\"גלידה\",\"ג'חנון\",\"פלפל צ׳ילי\",\"צנונית\",\"דייקון\",\"ג׳ינג׳ר\",\"ארטישוק\",\"דלעת ספגטי\",\"שום סגול\",\"כרוב ניצנים\",\"עלי קארי\",\"גורגונזולה\",\"שמנת חמוצה\",\"משקה קוקוס\",\"גבינת עיזים\",\"צ׳דר\",\"מימלט\",\"משקה סויה וניל\",\"שמנת לבישול 10%\",\"בולגרית כבשים\",\"יוגורט בטעם פירות 38\",\"לחמניות מלא\",\"לחמניות נקניק\",\"פיתה דקה\",\"טורטייה תירס\",\"קרקרים\",\"לחם תפוזים\",\"קאפקייקס וניל\",\"עוגיות חמאה\",\"סימיט\",\"לאפה עיראקית\",\"בורקס תרד\",\"בצק שמרים\",\"כנפיים עוף\",\"עצמות למרק\",\"מוסר ים\",\"סלמון מעושן\",\"קורנפלור\",\"אבקת וניל\",\"פקטין\",\"מלח הימלאיה\",\"עשבי פרובנס יבש\",\"ציפורן\",\"זרעי כוסברה\",\"פלפל שחור גרגרים\",\"זרעי צ׳יה\",\"זרעי פשתן\",\"אגוזי קשיו קלויים\",\"קשיו שבור\",\"כוסמת\",\"אטריות ביצים\",\"דפי אורז\",\"טמרי\",\"תערובת שקשוקה\",\"מים מינרליים\",\"תה שחור\",\"משקה קפה\",\"משקה חלב\",\"תפוח עץ זהוב\",\"ליים\",\"תאנה\",\"אפרסמון\",\"אגוז מלך\",\"ערמונים\",\"עגבניית תמר\",\"כורכום טרי\",\"דלעת ערמונים\",\"בטטה לבנה\",\"תפוח אדמה צהוב\",\"שאלוט\",\"בוק צ׳וי\",\"נבטי שעועית\",\"אבוקדו האס\",\"בזיליקום תאילנדי\",\"עשבי תיבול מעורב 70\",\"מנצ׳גו\",\"קממבר\",\"חלב עיזים\",\"אסיאגו\",\"רוקפור\",\"אשל\",\"לבנה צאן\",\"מעדן חלב\",\"יוגורט 1.5%\",\"יוגורט יווני 5%\",\"ריקוטה 9%\",\"שמנת 32%\",\"יוגורט בטעם פירות 39\",\"לחם דגנים\",\"לחמניות כוסמין\",\"לאפה מחמצת\",\"קרקרים כוסמין\",\"בריוש\",\"בצק עלים\",\"קרואסון שקדים\",\"קראנץ׳ שוקולד\",\"טארטלט וניל\",\"מקרונים\",\"בשר לטחינה 10%\",\"אנשובי טרי\",\"קלמארי שלם\",\"פסטרמה עוף חריפה\",\"מרגז\",\"המבורגר הודו\",\"קבב טלה\",\"בשר ראש\",\"עוף שלם טרי\",\"כבדי בקר\",\"קבב מתובל 39\",\"קמח כוסמין לבן\",\"ג׳לטין\",\"פלפל לבן\",\"חוואייג׳\",\"הל\",\"פלפל אנגלי\",\"שומשום שחור\",\"קוקוס טחון\",\"תפוח עץ\",\"תפוז\",\"אפרסק\",\"תמר\",\"מלפפון\",\"ברוקולי\",\"חסה\",\"נענע\",\"סלרי\",\"פטריות\",\"סלק\",\"דלעת\",\"יוגורט יווני\",\"קוטג'\",\"ריקוטה\",\"חלבון ביצה\",\"משקה סויה\",\"קפיר\",\"לחם שחור\",\"באגט\",\"לחמנייה\",\"בייגל\",\"לחם\",\"מצה\",\"ראסק\",\"פיתה\",\"בשר טחון\",\"אנטריקוט\",\"קבב\",\"נקניקיות\",\"בייקון הודו\",\"שווארמה הודו\",\"פרגיות\",\"אורז\",\"פסטה\",\"קמח\",\"קקאו\",\"אבקת אפייה\",\"מלח\",\"פפריקה\",\"כורכום\",\"בהרט\",\"שמן קנולה\",\"שמן סויה\",\"טחינה\",\"שעועית\",\"רסק עגבניות\",\"שעועית אפויה\",\"רוטב צ'ילי\",\"פסטו\",\"תבלין שווארמה\",\"פירורי לחם\",\"ירקות קפואים\",\"פיצה קפואה\",\"שניצל דג\",\"שניצל עוף\",\"המבורגר\",\"אדממה\",\"מיץ תפוזים\",\"מיץ תפוחים\",\"קפה\",\"משקה אנרגיה\",\"סודה\",\"בירה\",\"בננה\",\"קלמנטינה\",\"אשכולית\",\"אבטיח\",\"מלון\",\"קיווי\",\"פסיפלורה\",\"עגבנייה\",\"פלפל\",\"כרובית\",\"בזיליקום\",\"בצל ירוק\",\"תרד\",\"מנגולד\",\"חלב\",\"חלב\",\"שמנת\",\"יוגורט\",\"מוצרלה\",\"משקה חלב\",\"לחם מלא\",\"לאפה\",\"בורקס\",\"בורקס\",\"כרעיים עוף\",\"סלמון\",\"סלמון\",\"קלמרי\",\"שניצל עוף\",\"קוסקוס\",\"קמח\",\"קמח\",\"סולת\",\"סוכר\",\"פלפל שחור\",\"אדממה\",\"עגבניות משומרות\",\"רוטב סויה\",\"רוטב טריאקי\",\"קטשופ\",\"שומשום\",\"פירורי לחם\",\"ירקות קפואים\",\"ירקות קפואים\",\"פיצה קפואה\",\"בצק פילו\",\"פלאפל\",\"פיתה\",\"תירס קפוא\",\"משקה קולה\",\"מיץ ענבים\",\"בירה\",\"תפוח פינק ליידי\",\"אגס נאשי\",\"לימון\",\"פטל\",\"דובדבן\",\"שסק\",\"קרמבולה\",\"ליצ׳י\",\"שזיף שחור\",\"פקאן\",\"מלפפון חממה\",\"עגבניית שרי\",\"יין אדום\",\"יין לבן\",\"פפאיה\",\"קליפת לימון\",\"רמבוטן\",\"נקטרינה לבנה\",\"פיסטוק\",\"פלפל שושקה\",\"חלפיניו\",\"קייל\",\"בייבי עלים\",\"מנגולד קצוץ\",\"לפת\",\"שורש סלרי\",\"שומר\",\"ארטישוק ירושלמי\",\"קישוא עגול\",\"בצל לבן\",\"אספרגוס לבן\",\"פטריות אויסטר\",\"קשקבל\",\"ברי\",\"פטה עיזים\",\"גרוייר\",\"אמנטל\",\"טל העמק\",\"משקה שיבולת שועל\",\"חלומי\",\"מסקרפונה 250ג\",\"לחם שאור מלא\",\"עוגיות טחינה\",\"עוגת דבש\",\"מלבי\",\"פילה מדומה\",\"אוסובוקו\",\"רוסטביף\",\"סלמי\",\"נסיכת הנילוס\",\"גפילטע פיש\",\"צלעות טלה\",\"חזה עוף אורגני\",\"לשון בקר\",\"שוק טלה\",\"קמח כוסמין מלא\",\"קמח תירס\",\"קמח אורז\",\"שמרים יבשים\",\"גראם מסאלה\",\"זרעי חרדל\",\"פיסטוקים קלופים\",\"פתיתי קוקוס\",\"צימוקים בהירים\",\"תמרים קצוצים\",\"משמשים מיובשים\",\"איטריות אורז\",\"סובה\",\"אבקת מרק ירקות\",\"אבקת מרק בצל\",\"סרירצ׳ה\",\"מיסו בהיר\",\"עגבניות מיובשות\",\"פדרון\",\"מיזונה\",\"עלי גפן\",\"תפוח אדמה אדום\",\"באק צ׳וי\",\"אספרגוס\",\"אבוקדו ריד\",\"שיטאקה\",\"פורצ׳יני\",\"עלי כורכום\",\"עשבי פרובנס\",\"יוגורט עיזים\",\"סקיר\",\"משקה לוז\",\"גבינת שמנת שום ועשבי תיבול\",\"פרובולונה\",\"קוטג' 3%\",\"פרמזן חתיכה\",\"צפתית עזים\",\"לחם כוסמין\",\"לחם שיבולת שועל\",\"פרעצל\",\"טורטייה\",\"פיתות מיני\",\"חלה מתוקה\",\"מאפינס שוקולד\",\"פאי תפוחים\",\"בקלאווה\",\"חזה הודו\",\"שייטל\",\"צלי כתף 6\",\"לברק\",\"בקלה\",\"מרלוזה\",\"טונה סטייק\",\"דניס שלם\",\"סרדינים\",\"מולים\",\"כתף טלה\",\"שווארמה עוף מתובלת\",\"פרגיות במרינדה\",\"טחול עוף\",\"הרינג\",\"סוכר וניל\",\"מלח ים\",\"פפריקה מעושנת\",\"קארי\",\"אניס כוכבי\",\"פפריקה חריפה\",\"אגוזי לוז טחונים\",\"שקדים מולבנים\",\"בוטנים קלויים\",\"חמוציות מיובשות\",\"חיטה מלאה\",\"שעורה קלויה\",\"אודון\",\"נורי\",\"רוטב דגים\",\"מיסו כהה\",\"רוטב אויסטר\",\"חרדל גרגרים\",\"חמאת בוטנים חלקה\",\"צימוקים כהים\",\"שזיפים מיובשים\",\"גריסים\",\"בורגול גס\",\"קוביות עגבניות\",\"טחינה מלאה\",\"חמאת שקדים\",\"גלוקוזה נוזלית\",\"ניוקי קפוא\",\"ירקות לוווק קפואים\",\"פלפל ממולא קפוא\",\"גלידת שוקולד\",\"בצק סיגר מרובע\",\"סודה בטעמים\",\"תה קמומיל\",\"קפה פילטר\",\"קמבוצ׳ה\",\"יין רוזה\",\"נייר אפייה\",\"חמאת בוטנים קראנצ׳י\",\"סירופ מייפל\",\"סירופ תירס\",\"בלינצ׳ס תפוחי אדמה\",\"נאגטס עוף\",\"קובה קפוא\",\"שווארמה צמחית\",\"מאפה תפוחי אדמה קפוא\",\"בצק פיצה קפוא\",\"קציצות דג קפואות\",\"תה נענע ולימון\",\"בירה IPA\",\"תה היביסקוס\",\"נייר סופג\",\"פירה קפוא\",\"כרוב ממולא קפוא\",\"קציצות ירק קפואות\",\"שניצל תירס קפוא\",\"קרם פטיסייר קפוא\",\"טורטיה קפואה\",\"סמבוסק גבינה קפוא\",\"מיץ מנגו\",\"מיץ פסיפלורה\",\"קפסולות קפה\",\"משקה אלוורה\",\"סיידר חם\",\"חמאת קשיו\",\"בלינצ׳ס גבינה\",\"בורקס תרד קפוא\",\"שקדי מרק קפואים\",\"חלת שוקולד קפואה\",\"שלגון וניל\",\"לזניה קפואה\",\"משקה חלב וניל\",\"יין מוסקט\"].\n- DO NOT invent or use any ingredient outside of this list.\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "סלט קינואה עם בטטה קלויה ותפוח עץ",
+      "photoUrl": "https://spoonacular.com/recipeImages/636217-556x370.jpg",
+      "tags": [
+        "טבעוני",
+        "סלט",
+        "בריא"
+      ],
+      "steps": [
+        "קולפים ומקצצים את הבטטה לקוביות קטנות.  מניחים בתנור שחומם מראש ל-200 מעלות צלזיוס,  ומטגנים  למשך כ-20 דקות עד להשחמה קלה.",
+        "בזמן שהבטטה נאפית, מבשלים את הקינואה לפי הוראות היצרן.  מוודאים שהיא רכה אך לא מפורקת.",
+        "מנקים את תפוח העץ,  חותכים לקוביות קטנות ומערבבים עם הקינואה המבושלת.",
+        "מוסיפים את הבטטה הקלויה,  ומערבבים  את כל  החומרים  יחד. מתבלים במלח לפי הטעם.",
+        "לפני ההגשה אפשר להוסיף מעט שמן זית ולימון טרי."
+      ],
+      "ingredients": [
+        {
+          "name": "בטטה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "קינואה",
+          "qty": 150,
+          "unit": "גרם"
+        },
+        {
+          "name": "תפוח עץ",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "מלח",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 10,
+          "unit": "מ\"ל"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 5406,
+    "createdAt": "2025-09-17T13:10:38.303Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "92d026eccd7ad4c44d5a55ee249e34ae2109276ac191b5fd63d52a42559ecae1",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You may ONLY use ingredients from the following list: [\"תפוח עץ\",\"אננס\",\"רימון\",\"פלפל\",\"בצל\",\"בצל\",\"חציל\",\"בטטה\",\"כרוב\",\"כרוב\",\"חסה\",\"כוסברה\",\"שמיר\",\"כרישה\",\"שורש פטרוזיליה\",\"קולורבי\",\"קישוא\",\"קישוא\",\"תערובת עלים\",\"חלב\",\"גבינה לבנה\",\"גבינה בולגרית\",\"גבינת צפתית\",\"פרמזן\",\"חמאה\",\"לחם מחמצת\",\"פיתה\",\"עוגה\",\"מלאווח\",\"חזה עוף\",\"סינטה\",\"צלי כתף\",\"בורי\",\"דניס\",\"אמנון\",\"המבורגר\",\"אורז\",\"אורז\",\"קינואה\",\"קינואה\",\"בורגול\",\"פתיתים\",\"פסטה\",\"קמח שקדים\",\"שוקולד צ'יפס\",\"מלח\",\"שום\",\"עדשים\",\"שעועית\",\"טונה שימורים\",\"חומץ\",\"מיונז\",\"חרדל\",\"סורבה\",\"בורקס\",\"מלאווח\",\"מים מוגזים\",\"משקה קל\",\"תה ירוק\",\"קפה\",\"סיידר תפוחים\",\"גויאבה\",\"בלוברי\",\"קשיו\",\"ענבים\",\"ענבים\",\"מנגו\",\"נקטרינה\",\"שזיף\",\"אגס\",\"תות\",\"שקד\",\"בננה\",\"פלפל\",\"שום\",\"גזר\",\"קישוא\",\"תפוח אדמה\",\"פטרוזיליה\",\"רוקט\",\"פטריות\",\"דלורית\",\"שמנת לבישול\",\"יוגורט\",\"גבינה צהובה\",\"גאודה\",\"לבנה\",\"מסקרפונה\",\"משקה יוגורט\",\"גבינת שמנת\",\"טופו\",\"משקה שקדים\",\"לבנה\",\"לחם לבן\",\"חלה\",\"פיתה\",\"פוקאצ'ה\",\"קרואסון\",\"קרואסון\",\"לחם שיפון\",\"ג'חנון\",\"שוקיים עוף\",\"פסטרמה הודו\",\"כבד עוף\",\"טונה\",\"שרימפס\",\"כבד אווז\",\"טלה\",\"פסטה\",\"פסטה\",\"סודה לשתייה\",\"סוכר\",\"כמון\",\"קינמון\",\"זעתר\",\"שמן זית\",\"חומוס\",\"עדשים\",\"תירס שימורים\",\"טונה שימורים\",\"מלפפון חמוץ\",\"חומץ\",\"דבש\",\"סילאן\",\"אבקת מרק\",\"בצק סיגר\",\"גלידה\",\"ג'חנון\",\"פלפל צ׳ילי\",\"צנונית\",\"דייקון\",\"ג׳ינג׳ר\",\"ארטישוק\",\"דלעת ספגטי\",\"שום סגול\",\"כרוב ניצנים\",\"עלי קארי\",\"גורגונזולה\",\"שמנת חמוצה\",\"משקה קוקוס\",\"גבינת עיזים\",\"צ׳דר\",\"מימלט\",\"משקה סויה וניל\",\"שמנת לבישול 10%\",\"בולגרית כבשים\",\"יוגורט בטעם פירות 38\",\"לחמניות מלא\",\"לחמניות נקניק\",\"פיתה דקה\",\"טורטייה תירס\",\"קרקרים\",\"לחם תפוזים\",\"קאפקייקס וניל\",\"עוגיות חמאה\",\"סימיט\",\"לאפה עיראקית\",\"בורקס תרד\",\"בצק שמרים\",\"כנפיים עוף\",\"עצמות למרק\",\"מוסר ים\",\"סלמון מעושן\",\"קורנפלור\",\"אבקת וניל\",\"פקטין\",\"מלח הימלאיה\",\"עשבי פרובנס יבש\",\"ציפורן\",\"זרעי כוסברה\",\"פלפל שחור גרגרים\",\"זרעי צ׳יה\",\"זרעי פשתן\",\"אגוזי קשיו קלויים\",\"קשיו שבור\",\"כוסמת\",\"אטריות ביצים\",\"דפי אורז\",\"טמרי\",\"תערובת שקשוקה\",\"מים מינרליים\",\"תה שחור\",\"משקה קפה\",\"משקה חלב\",\"תפוח עץ זהוב\",\"ליים\",\"תאנה\",\"אפרסמון\",\"אגוז מלך\",\"ערמונים\",\"עגבניית תמר\",\"כורכום טרי\",\"דלעת ערמונים\",\"בטטה לבנה\",\"תפוח אדמה צהוב\",\"שאלוט\",\"בוק צ׳וי\",\"נבטי שעועית\",\"אבוקדו האס\",\"בזיליקום תאילנדי\",\"עשבי תיבול מעורב 70\",\"מנצ׳גו\",\"קממבר\",\"חלב עיזים\",\"אסיאגו\",\"רוקפור\",\"אשל\",\"לבנה צאן\",\"מעדן חלב\",\"יוגורט 1.5%\",\"יוגורט יווני 5%\",\"ריקוטה 9%\",\"שמנת 32%\",\"יוגורט בטעם פירות 39\",\"לחם דגנים\",\"לחמניות כוסמין\",\"לאפה מחמצת\",\"קרקרים כוסמין\",\"בריוש\",\"בצק עלים\",\"קרואסון שקדים\",\"קראנץ׳ שוקולד\",\"טארטלט וניל\",\"מקרונים\",\"בשר לטחינה 10%\",\"אנשובי טרי\",\"קלמארי שלם\",\"פסטרמה עוף חריפה\",\"מרגז\",\"המבורגר הודו\",\"קבב טלה\",\"בשר ראש\",\"עוף שלם טרי\",\"כבדי בקר\",\"קבב מתובל 39\",\"קמח כוסמין לבן\",\"ג׳לטין\",\"פלפל לבן\",\"חוואייג׳\",\"הל\",\"פלפל אנגלי\",\"שומשום שחור\",\"קוקוס טחון\",\"תפוח עץ\",\"תפוז\",\"אפרסק\",\"תמר\",\"מלפפון\",\"ברוקולי\",\"חסה\",\"נענע\",\"סלרי\",\"פטריות\",\"סלק\",\"דלעת\",\"יוגורט יווני\",\"קוטג'\",\"ריקוטה\",\"חלבון ביצה\",\"משקה סויה\",\"קפיר\",\"לחם שחור\",\"באגט\",\"לחמנייה\",\"בייגל\",\"לחם\",\"מצה\",\"ראסק\",\"פיתה\",\"בשר טחון\",\"אנטריקוט\",\"קבב\",\"נקניקיות\",\"בייקון הודו\",\"שווארמה הודו\",\"פרגיות\",\"אורז\",\"פסטה\",\"קמח\",\"קקאו\",\"אבקת אפייה\",\"מלח\",\"פפריקה\",\"כורכום\",\"בהרט\",\"שמן קנולה\",\"שמן סויה\",\"טחינה\",\"שעועית\",\"רסק עגבניות\",\"שעועית אפויה\",\"רוטב צ'ילי\",\"פסטו\",\"תבלין שווארמה\",\"פירורי לחם\",\"ירקות קפואים\",\"פיצה קפואה\",\"שניצל דג\",\"שניצל עוף\",\"המבורגר\",\"אדממה\",\"מיץ תפוזים\",\"מיץ תפוחים\",\"קפה\",\"משקה אנרגיה\",\"סודה\",\"בירה\",\"בננה\",\"קלמנטינה\",\"אשכולית\",\"אבטיח\",\"מלון\",\"קיווי\",\"פסיפלורה\",\"עגבנייה\",\"פלפל\",\"כרובית\",\"בזיליקום\",\"בצל ירוק\",\"תרד\",\"מנגולד\",\"חלב\",\"חלב\",\"שמנת\",\"יוגורט\",\"מוצרלה\",\"משקה חלב\",\"לחם מלא\",\"לאפה\",\"בורקס\",\"בורקס\",\"כרעיים עוף\",\"סלמון\",\"סלמון\",\"קלמרי\",\"שניצל עוף\",\"קוסקוס\",\"קמח\",\"קמח\",\"סולת\",\"סוכר\",\"פלפל שחור\",\"אדממה\",\"עגבניות משומרות\",\"רוטב סויה\",\"רוטב טריאקי\",\"קטשופ\",\"שומשום\",\"פירורי לחם\",\"ירקות קפואים\",\"ירקות קפואים\",\"פיצה קפואה\",\"בצק פילו\",\"פלאפל\",\"פיתה\",\"תירס קפוא\",\"משקה קולה\",\"מיץ ענבים\",\"בירה\",\"תפוח פינק ליידי\",\"אגס נאשי\",\"לימון\",\"פטל\",\"דובדבן\",\"שסק\",\"קרמבולה\",\"ליצ׳י\",\"שזיף שחור\",\"פקאן\",\"מלפפון חממה\",\"עגבניית שרי\",\"יין אדום\",\"יין לבן\",\"פפאיה\",\"קליפת לימון\",\"רמבוטן\",\"נקטרינה לבנה\",\"פיסטוק\",\"פלפל שושקה\",\"חלפיניו\",\"קייל\",\"בייבי עלים\",\"מנגולד קצוץ\",\"לפת\",\"שורש סלרי\",\"שומר\",\"ארטישוק ירושלמי\",\"קישוא עגול\",\"בצל לבן\",\"אספרגוס לבן\",\"פטריות אויסטר\",\"קשקבל\",\"ברי\",\"פטה עיזים\",\"גרוייר\",\"אמנטל\",\"טל העמק\",\"משקה שיבולת שועל\",\"חלומי\",\"מסקרפונה 250ג\",\"לחם שאור מלא\",\"עוגיות טחינה\",\"עוגת דבש\",\"מלבי\",\"פילה מדומה\",\"אוסובוקו\",\"רוסטביף\",\"סלמי\",\"נסיכת הנילוס\",\"גפילטע פיש\",\"צלעות טלה\",\"חזה עוף אורגני\",\"לשון בקר\",\"שוק טלה\",\"קמח כוסמין מלא\",\"קמח תירס\",\"קמח אורז\",\"שמרים יבשים\",\"גראם מסאלה\",\"זרעי חרדל\",\"פיסטוקים קלופים\",\"פתיתי קוקוס\",\"צימוקים בהירים\",\"תמרים קצוצים\",\"משמשים מיובשים\",\"איטריות אורז\",\"סובה\",\"אבקת מרק ירקות\",\"אבקת מרק בצל\",\"סרירצ׳ה\",\"מיסו בהיר\",\"עגבניות מיובשות\",\"פדרון\",\"מיזונה\",\"עלי גפן\",\"תפוח אדמה אדום\",\"באק צ׳וי\",\"אספרגוס\",\"אבוקדו ריד\",\"שיטאקה\",\"פורצ׳יני\",\"עלי כורכום\",\"עשבי פרובנס\",\"יוגורט עיזים\",\"סקיר\",\"משקה לוז\",\"גבינת שמנת שום ועשבי תיבול\",\"פרובולונה\",\"קוטג' 3%\",\"פרמזן חתיכה\",\"צפתית עזים\",\"לחם כוסמין\",\"לחם שיבולת שועל\",\"פרעצל\",\"טורטייה\",\"פיתות מיני\",\"חלה מתוקה\",\"מאפינס שוקולד\",\"פאי תפוחים\",\"בקלאווה\",\"חזה הודו\",\"שייטל\",\"צלי כתף 6\",\"לברק\",\"בקלה\",\"מרלוזה\",\"טונה סטייק\",\"דניס שלם\",\"סרדינים\",\"מולים\",\"כתף טלה\",\"שווארמה עוף מתובלת\",\"פרגיות במרינדה\",\"טחול עוף\",\"הרינג\",\"סוכר וניל\",\"מלח ים\",\"פפריקה מעושנת\",\"קארי\",\"אניס כוכבי\",\"פפריקה חריפה\",\"אגוזי לוז טחונים\",\"שקדים מולבנים\",\"בוטנים קלויים\",\"חמוציות מיובשות\",\"חיטה מלאה\",\"שעורה קלויה\",\"אודון\",\"נורי\",\"רוטב דגים\",\"מיסו כהה\",\"רוטב אויסטר\",\"חרדל גרגרים\",\"חמאת בוטנים חלקה\",\"צימוקים כהים\",\"שזיפים מיובשים\",\"גריסים\",\"בורגול גס\",\"קוביות עגבניות\",\"טחינה מלאה\",\"חמאת שקדים\",\"גלוקוזה נוזלית\",\"ניוקי קפוא\",\"ירקות לוווק קפואים\",\"פלפל ממולא קפוא\",\"גלידת שוקולד\",\"בצק סיגר מרובע\",\"סודה בטעמים\",\"תה קמומיל\",\"קפה פילטר\",\"קמבוצ׳ה\",\"יין רוזה\",\"נייר אפייה\",\"חמאת בוטנים קראנצ׳י\",\"סירופ מייפל\",\"סירופ תירס\",\"בלינצ׳ס תפוחי אדמה\",\"נאגטס עוף\",\"קובה קפוא\",\"שווארמה צמחית\",\"מאפה תפוחי אדמה קפוא\",\"בצק פיצה קפוא\",\"קציצות דג קפואות\",\"תה נענע ולימון\",\"בירה IPA\",\"תה היביסקוס\",\"נייר סופג\",\"פירה קפוא\",\"כרוב ממולא קפוא\",\"קציצות ירק קפואות\",\"שניצל תירס קפוא\",\"קרם פטיסייר קפוא\",\"טורטיה קפואה\",\"סמבוסק גבינה קפוא\",\"מיץ מנגו\",\"מיץ פסיפלורה\",\"קפסולות קפה\",\"משקה אלוורה\",\"סיידר חם\",\"חמאת קשיו\",\"בלינצ׳ס גבינה\",\"בורקס תרד קפוא\",\"שקדי מרק קפואים\",\"חלת שוקולד קפואה\",\"שלגון וניל\",\"לזניה קפואה\",\"משקה חלב וניל\",\"יין מוסקט\"].\n- DO NOT invent or use any ingredient outside of this list.\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "סלט קינואה עם בטטה צרובה ותפוחי עץ",
+      "photoUrl": "https://spoonacular.com/recipeImages/636147-556x370.jpg",
+      "tags": [
+        "טבעוני",
+        "סלט",
+        "קל"
+      ],
+      "steps": [
+        "חותכים את הבטטה לקוביות בגודל בינוני ומטגנים במחבת עם מעט שמן זית עד לקבלת צבע שחום-זהוב.",
+        "מבשלים את הקינואה לפי הוראות היצרן.",
+        "חותכים את תפוחי העץ לקוביות קטנות.",
+        "מערבבים את הקינואה, הבטטה הצרובה, תפוחי העץ, חסה קצוצה וכוסברה קצוצה בקערה.",
+        "מתבלים במלח, פלפל שחור ושמן זית לפי הטעם."
+      ],
+      "ingredients": [
+        {
+          "name": "בטטה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "קינואה",
+          "qty": 100,
+          "unit": "גרם"
+        },
+        {
+          "name": "תפוח עץ",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "חסה",
+          "qty": 50,
+          "unit": "גרם"
+        },
+        {
+          "name": "כוסברה",
+          "qty": 20,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 2,
+          "unit": "כף"
+        },
+        {
+          "name": "מלח",
+          "qty": 1,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 1,
+          "unit": "מ\"ל"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 5379,
+    "createdAt": "2025-09-17T13:14:45.363Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "92d026eccd7ad4c44d5a55ee249e34ae2109276ac191b5fd63d52a42559ecae1",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You may ONLY use ingredients from the following list: [\"תפוח עץ\",\"אננס\",\"רימון\",\"פלפל\",\"בצל\",\"בצל\",\"חציל\",\"בטטה\",\"כרוב\",\"כרוב\",\"חסה\",\"כוסברה\",\"שמיר\",\"כרישה\",\"שורש פטרוזיליה\",\"קולורבי\",\"קישוא\",\"קישוא\",\"תערובת עלים\",\"חלב\",\"גבינה לבנה\",\"גבינה בולגרית\",\"גבינת צפתית\",\"פרמזן\",\"חמאה\",\"לחם מחמצת\",\"פיתה\",\"עוגה\",\"מלאווח\",\"חזה עוף\",\"סינטה\",\"צלי כתף\",\"בורי\",\"דניס\",\"אמנון\",\"המבורגר\",\"אורז\",\"אורז\",\"קינואה\",\"קינואה\",\"בורגול\",\"פתיתים\",\"פסטה\",\"קמח שקדים\",\"שוקולד צ'יפס\",\"מלח\",\"שום\",\"עדשים\",\"שעועית\",\"טונה שימורים\",\"חומץ\",\"מיונז\",\"חרדל\",\"סורבה\",\"בורקס\",\"מלאווח\",\"מים מוגזים\",\"משקה קל\",\"תה ירוק\",\"קפה\",\"סיידר תפוחים\",\"גויאבה\",\"בלוברי\",\"קשיו\",\"ענבים\",\"ענבים\",\"מנגו\",\"נקטרינה\",\"שזיף\",\"אגס\",\"תות\",\"שקד\",\"בננה\",\"פלפל\",\"שום\",\"גזר\",\"קישוא\",\"תפוח אדמה\",\"פטרוזיליה\",\"רוקט\",\"פטריות\",\"דלורית\",\"שמנת לבישול\",\"יוגורט\",\"גבינה צהובה\",\"גאודה\",\"לבנה\",\"מסקרפונה\",\"משקה יוגורט\",\"גבינת שמנת\",\"טופו\",\"משקה שקדים\",\"לבנה\",\"לחם לבן\",\"חלה\",\"פיתה\",\"פוקאצ'ה\",\"קרואסון\",\"קרואסון\",\"לחם שיפון\",\"ג'חנון\",\"שוקיים עוף\",\"פסטרמה הודו\",\"כבד עוף\",\"טונה\",\"שרימפס\",\"כבד אווז\",\"טלה\",\"פסטה\",\"פסטה\",\"סודה לשתייה\",\"סוכר\",\"כמון\",\"קינמון\",\"זעתר\",\"שמן זית\",\"חומוס\",\"עדשים\",\"תירס שימורים\",\"טונה שימורים\",\"מלפפון חמוץ\",\"חומץ\",\"דבש\",\"סילאן\",\"אבקת מרק\",\"בצק סיגר\",\"גלידה\",\"ג'חנון\",\"פלפל צ׳ילי\",\"צנונית\",\"דייקון\",\"ג׳ינג׳ר\",\"ארטישוק\",\"דלעת ספגטי\",\"שום סגול\",\"כרוב ניצנים\",\"עלי קארי\",\"גורגונזולה\",\"שמנת חמוצה\",\"משקה קוקוס\",\"גבינת עיזים\",\"צ׳דר\",\"מימלט\",\"משקה סויה וניל\",\"שמנת לבישול 10%\",\"בולגרית כבשים\",\"יוגורט בטעם פירות 38\",\"לחמניות מלא\",\"לחמניות נקניק\",\"פיתה דקה\",\"טורטייה תירס\",\"קרקרים\",\"לחם תפוזים\",\"קאפקייקס וניל\",\"עוגיות חמאה\",\"סימיט\",\"לאפה עיראקית\",\"בורקס תרד\",\"בצק שמרים\",\"כנפיים עוף\",\"עצמות למרק\",\"מוסר ים\",\"סלמון מעושן\",\"קורנפלור\",\"אבקת וניל\",\"פקטין\",\"מלח הימלאיה\",\"עשבי פרובנס יבש\",\"ציפורן\",\"זרעי כוסברה\",\"פלפל שחור גרגרים\",\"זרעי צ׳יה\",\"זרעי פשתן\",\"אגוזי קשיו קלויים\",\"קשיו שבור\",\"כוסמת\",\"אטריות ביצים\",\"דפי אורז\",\"טמרי\",\"תערובת שקשוקה\",\"מים מינרליים\",\"תה שחור\",\"משקה קפה\",\"משקה חלב\",\"תפוח עץ זהוב\",\"ליים\",\"תאנה\",\"אפרסמון\",\"אגוז מלך\",\"ערמונים\",\"עגבניית תמר\",\"כורכום טרי\",\"דלעת ערמונים\",\"בטטה לבנה\",\"תפוח אדמה צהוב\",\"שאלוט\",\"בוק צ׳וי\",\"נבטי שעועית\",\"אבוקדו האס\",\"בזיליקום תאילנדי\",\"עשבי תיבול מעורב 70\",\"מנצ׳גו\",\"קממבר\",\"חלב עיזים\",\"אסיאגו\",\"רוקפור\",\"אשל\",\"לבנה צאן\",\"מעדן חלב\",\"יוגורט 1.5%\",\"יוגורט יווני 5%\",\"ריקוטה 9%\",\"שמנת 32%\",\"יוגורט בטעם פירות 39\",\"לחם דגנים\",\"לחמניות כוסמין\",\"לאפה מחמצת\",\"קרקרים כוסמין\",\"בריוש\",\"בצק עלים\",\"קרואסון שקדים\",\"קראנץ׳ שוקולד\",\"טארטלט וניל\",\"מקרונים\",\"בשר לטחינה 10%\",\"אנשובי טרי\",\"קלמארי שלם\",\"פסטרמה עוף חריפה\",\"מרגז\",\"המבורגר הודו\",\"קבב טלה\",\"בשר ראש\",\"עוף שלם טרי\",\"כבדי בקר\",\"קבב מתובל 39\",\"קמח כוסמין לבן\",\"ג׳לטין\",\"פלפל לבן\",\"חוואייג׳\",\"הל\",\"פלפל אנגלי\",\"שומשום שחור\",\"קוקוס טחון\",\"תפוח עץ\",\"תפוז\",\"אפרסק\",\"תמר\",\"מלפפון\",\"ברוקולי\",\"חסה\",\"נענע\",\"סלרי\",\"פטריות\",\"סלק\",\"דלעת\",\"יוגורט יווני\",\"קוטג'\",\"ריקוטה\",\"חלבון ביצה\",\"משקה סויה\",\"קפיר\",\"לחם שחור\",\"באגט\",\"לחמנייה\",\"בייגל\",\"לחם\",\"מצה\",\"ראסק\",\"פיתה\",\"בשר טחון\",\"אנטריקוט\",\"קבב\",\"נקניקיות\",\"בייקון הודו\",\"שווארמה הודו\",\"פרגיות\",\"אורז\",\"פסטה\",\"קמח\",\"קקאו\",\"אבקת אפייה\",\"מלח\",\"פפריקה\",\"כורכום\",\"בהרט\",\"שמן קנולה\",\"שמן סויה\",\"טחינה\",\"שעועית\",\"רסק עגבניות\",\"שעועית אפויה\",\"רוטב צ'ילי\",\"פסטו\",\"תבלין שווארמה\",\"פירורי לחם\",\"ירקות קפואים\",\"פיצה קפואה\",\"שניצל דג\",\"שניצל עוף\",\"המבורגר\",\"אדממה\",\"מיץ תפוזים\",\"מיץ תפוחים\",\"קפה\",\"משקה אנרגיה\",\"סודה\",\"בירה\",\"בננה\",\"קלמנטינה\",\"אשכולית\",\"אבטיח\",\"מלון\",\"קיווי\",\"פסיפלורה\",\"עגבנייה\",\"פלפל\",\"כרובית\",\"בזיליקום\",\"בצל ירוק\",\"תרד\",\"מנגולד\",\"חלב\",\"חלב\",\"שמנת\",\"יוגורט\",\"מוצרלה\",\"משקה חלב\",\"לחם מלא\",\"לאפה\",\"בורקס\",\"בורקס\",\"כרעיים עוף\",\"סלמון\",\"סלמון\",\"קלמרי\",\"שניצל עוף\",\"קוסקוס\",\"קמח\",\"קמח\",\"סולת\",\"סוכר\",\"פלפל שחור\",\"אדממה\",\"עגבניות משומרות\",\"רוטב סויה\",\"רוטב טריאקי\",\"קטשופ\",\"שומשום\",\"פירורי לחם\",\"ירקות קפואים\",\"ירקות קפואים\",\"פיצה קפואה\",\"בצק פילו\",\"פלאפל\",\"פיתה\",\"תירס קפוא\",\"משקה קולה\",\"מיץ ענבים\",\"בירה\",\"תפוח פינק ליידי\",\"אגס נאשי\",\"לימון\",\"פטל\",\"דובדבן\",\"שסק\",\"קרמבולה\",\"ליצ׳י\",\"שזיף שחור\",\"פקאן\",\"מלפפון חממה\",\"עגבניית שרי\",\"יין אדום\",\"יין לבן\",\"פפאיה\",\"קליפת לימון\",\"רמבוטן\",\"נקטרינה לבנה\",\"פיסטוק\",\"פלפל שושקה\",\"חלפיניו\",\"קייל\",\"בייבי עלים\",\"מנגולד קצוץ\",\"לפת\",\"שורש סלרי\",\"שומר\",\"ארטישוק ירושלמי\",\"קישוא עגול\",\"בצל לבן\",\"אספרגוס לבן\",\"פטריות אויסטר\",\"קשקבל\",\"ברי\",\"פטה עיזים\",\"גרוייר\",\"אמנטל\",\"טל העמק\",\"משקה שיבולת שועל\",\"חלומי\",\"מסקרפונה 250ג\",\"לחם שאור מלא\",\"עוגיות טחינה\",\"עוגת דבש\",\"מלבי\",\"פילה מדומה\",\"אוסובוקו\",\"רוסטביף\",\"סלמי\",\"נסיכת הנילוס\",\"גפילטע פיש\",\"צלעות טלה\",\"חזה עוף אורגני\",\"לשון בקר\",\"שוק טלה\",\"קמח כוסמין מלא\",\"קמח תירס\",\"קמח אורז\",\"שמרים יבשים\",\"גראם מסאלה\",\"זרעי חרדל\",\"פיסטוקים קלופים\",\"פתיתי קוקוס\",\"צימוקים בהירים\",\"תמרים קצוצים\",\"משמשים מיובשים\",\"איטריות אורז\",\"סובה\",\"אבקת מרק ירקות\",\"אבקת מרק בצל\",\"סרירצ׳ה\",\"מיסו בהיר\",\"עגבניות מיובשות\",\"פדרון\",\"מיזונה\",\"עלי גפן\",\"תפוח אדמה אדום\",\"באק צ׳וי\",\"אספרגוס\",\"אבוקדו ריד\",\"שיטאקה\",\"פורצ׳יני\",\"עלי כורכום\",\"עשבי פרובנס\",\"יוגורט עיזים\",\"סקיר\",\"משקה לוז\",\"גבינת שמנת שום ועשבי תיבול\",\"פרובולונה\",\"קוטג' 3%\",\"פרמזן חתיכה\",\"צפתית עזים\",\"לחם כוסמין\",\"לחם שיבולת שועל\",\"פרעצל\",\"טורטייה\",\"פיתות מיני\",\"חלה מתוקה\",\"מאפינס שוקולד\",\"פאי תפוחים\",\"בקלאווה\",\"חזה הודו\",\"שייטל\",\"צלי כתף 6\",\"לברק\",\"בקלה\",\"מרלוזה\",\"טונה סטייק\",\"דניס שלם\",\"סרדינים\",\"מולים\",\"כתף טלה\",\"שווארמה עוף מתובלת\",\"פרגיות במרינדה\",\"טחול עוף\",\"הרינג\",\"סוכר וניל\",\"מלח ים\",\"פפריקה מעושנת\",\"קארי\",\"אניס כוכבי\",\"פפריקה חריפה\",\"אגוזי לוז טחונים\",\"שקדים מולבנים\",\"בוטנים קלויים\",\"חמוציות מיובשות\",\"חיטה מלאה\",\"שעורה קלויה\",\"אודון\",\"נורי\",\"רוטב דגים\",\"מיסו כהה\",\"רוטב אויסטר\",\"חרדל גרגרים\",\"חמאת בוטנים חלקה\",\"צימוקים כהים\",\"שזיפים מיובשים\",\"גריסים\",\"בורגול גס\",\"קוביות עגבניות\",\"טחינה מלאה\",\"חמאת שקדים\",\"גלוקוזה נוזלית\",\"ניוקי קפוא\",\"ירקות לוווק קפואים\",\"פלפל ממולא קפוא\",\"גלידת שוקולד\",\"בצק סיגר מרובע\",\"סודה בטעמים\",\"תה קמומיל\",\"קפה פילטר\",\"קמבוצ׳ה\",\"יין רוזה\",\"נייר אפייה\",\"חמאת בוטנים קראנצ׳י\",\"סירופ מייפל\",\"סירופ תירס\",\"בלינצ׳ס תפוחי אדמה\",\"נאגטס עוף\",\"קובה קפוא\",\"שווארמה צמחית\",\"מאפה תפוחי אדמה קפוא\",\"בצק פיצה קפוא\",\"קציצות דג קפואות\",\"תה נענע ולימון\",\"בירה IPA\",\"תה היביסקוס\",\"נייר סופג\",\"פירה קפוא\",\"כרוב ממולא קפוא\",\"קציצות ירק קפואות\",\"שניצל תירס קפוא\",\"קרם פטיסייר קפוא\",\"טורטיה קפואה\",\"סמבוסק גבינה קפוא\",\"מיץ מנגו\",\"מיץ פסיפלורה\",\"קפסולות קפה\",\"משקה אלוורה\",\"סיידר חם\",\"חמאת קשיו\",\"בלינצ׳ס גבינה\",\"בורקס תרד קפוא\",\"שקדי מרק קפואים\",\"חלת שוקולד קפואה\",\"שלגון וניל\",\"לזניה קפואה\",\"משקה חלב וניל\",\"יין מוסקט\"].\n- DO NOT invent or use any ingredient outside of this list.\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "סלט קינואה עם חזה עוף צלוי ותפוח עץ",
+      "photoUrl": "https://spoonacular.com/recipeImages/636474-556x370.jpg",
+      "tags": [
+        "סלט",
+        "דיאטה",
+        "ללא גלוטן"
+      ],
+      "steps": [
+        "לבשל את הקינואה לפי הוראות היצרן.",
+        "לחתוך את חזה העוף לקוביות ולצלות במחבת עם מעט שמן זית עד להשחמה.",
+        "לחתוך את תפוח העץ לקוביות קטנות.",
+        "לערבב את הקינואה, חזה העוף, תפוח העץ, כוסברה קצוצה ומלח לפי הטעם.",
+        "לערבב עם מיץ לימון טרי ו שמן זית לפי הטעם."
+      ],
+      "ingredients": [
+        {
+          "name": "קינואה",
+          "qty": 150,
+          "unit": "גרם"
+        },
+        {
+          "name": "חזה עוף",
+          "qty": 200,
+          "unit": "גרם"
+        },
+        {
+          "name": "תפוח עץ",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "כוסברה",
+          "qty": 20,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 2,
+          "unit": "כף"
+        },
+        {
+          "name": "מלח",
+          "qty": 5,
+          "unit": "גרם"
+        },
+        {
+          "name": "לימון",
+          "qty": 1,
+          "unit": "יחידה"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 4033,
+    "createdAt": "2025-09-17T13:17:25.008Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "92d026eccd7ad4c44d5a55ee249e34ae2109276ac191b5fd63d52a42559ecae1",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n- You may ONLY use ingredients from the following list: [\"תפוח עץ\",\"אננס\",\"רימון\",\"פלפל\",\"בצל\",\"בצל\",\"חציל\",\"בטטה\",\"כרוב\",\"כרוב\",\"חסה\",\"כוסברה\",\"שמיר\",\"כרישה\",\"שורש פטרוזיליה\",\"קולורבי\",\"קישוא\",\"קישוא\",\"תערובת עלים\",\"חלב\",\"גבינה לבנה\",\"גבינה בולגרית\",\"גבינת צפתית\",\"פרמזן\",\"חמאה\",\"לחם מחמצת\",\"פיתה\",\"עוגה\",\"מלאווח\",\"חזה עוף\",\"סינטה\",\"צלי כתף\",\"בורי\",\"דניס\",\"אמנון\",\"המבורגר\",\"אורז\",\"אורז\",\"קינואה\",\"קינואה\",\"בורגול\",\"פתיתים\",\"פסטה\",\"קמח שקדים\",\"שוקולד צ'יפס\",\"מלח\",\"שום\",\"עדשים\",\"שעועית\",\"טונה שימורים\",\"חומץ\",\"מיונז\",\"חרדל\",\"סורבה\",\"בורקס\",\"מלאווח\",\"מים מוגזים\",\"משקה קל\",\"תה ירוק\",\"קפה\",\"סיידר תפוחים\",\"גויאבה\",\"בלוברי\",\"קשיו\",\"ענבים\",\"ענבים\",\"מנגו\",\"נקטרינה\",\"שזיף\",\"אגס\",\"תות\",\"שקד\",\"בננה\",\"פלפל\",\"שום\",\"גזר\",\"קישוא\",\"תפוח אדמה\",\"פטרוזיליה\",\"רוקט\",\"פטריות\",\"דלורית\",\"שמנת לבישול\",\"יוגורט\",\"גבינה צהובה\",\"גאודה\",\"לבנה\",\"מסקרפונה\",\"משקה יוגורט\",\"גבינת שמנת\",\"טופו\",\"משקה שקדים\",\"לבנה\",\"לחם לבן\",\"חלה\",\"פיתה\",\"פוקאצ'ה\",\"קרואסון\",\"קרואסון\",\"לחם שיפון\",\"ג'חנון\",\"שוקיים עוף\",\"פסטרמה הודו\",\"כבד עוף\",\"טונה\",\"שרימפס\",\"כבד אווז\",\"טלה\",\"פסטה\",\"פסטה\",\"סודה לשתייה\",\"סוכר\",\"כמון\",\"קינמון\",\"זעתר\",\"שמן זית\",\"חומוס\",\"עדשים\",\"תירס שימורים\",\"טונה שימורים\",\"מלפפון חמוץ\",\"חומץ\",\"דבש\",\"סילאן\",\"אבקת מרק\",\"בצק סיגר\",\"גלידה\",\"ג'חנון\",\"פלפל צ׳ילי\",\"צנונית\",\"דייקון\",\"ג׳ינג׳ר\",\"ארטישוק\",\"דלעת ספגטי\",\"שום סגול\",\"כרוב ניצנים\",\"עלי קארי\",\"גורגונזולה\",\"שמנת חמוצה\",\"משקה קוקוס\",\"גבינת עיזים\",\"צ׳דר\",\"מימלט\",\"משקה סויה וניל\",\"שמנת לבישול 10%\",\"בולגרית כבשים\",\"יוגורט בטעם פירות 38\",\"לחמניות מלא\",\"לחמניות נקניק\",\"פיתה דקה\",\"טורטייה תירס\",\"קרקרים\",\"לחם תפוזים\",\"קאפקייקס וניל\",\"עוגיות חמאה\",\"סימיט\",\"לאפה עיראקית\",\"בורקס תרד\",\"בצק שמרים\",\"כנפיים עוף\",\"עצמות למרק\",\"מוסר ים\",\"סלמון מעושן\",\"קורנפלור\",\"אבקת וניל\",\"פקטין\",\"מלח הימלאיה\",\"עשבי פרובנס יבש\",\"ציפורן\",\"זרעי כוסברה\",\"פלפל שחור גרגרים\",\"זרעי צ׳יה\",\"זרעי פשתן\",\"אגוזי קשיו קלויים\",\"קשיו שבור\",\"כוסמת\",\"אטריות ביצים\",\"דפי אורז\",\"טמרי\",\"תערובת שקשוקה\",\"מים מינרליים\",\"תה שחור\",\"משקה קפה\",\"משקה חלב\",\"תפוח עץ זהוב\",\"ליים\",\"תאנה\",\"אפרסמון\",\"אגוז מלך\",\"ערמונים\",\"עגבניית תמר\",\"כורכום טרי\",\"דלעת ערמונים\",\"בטטה לבנה\",\"תפוח אדמה צהוב\",\"שאלוט\",\"בוק צ׳וי\",\"נבטי שעועית\",\"אבוקדו האס\",\"בזיליקום תאילנדי\",\"עשבי תיבול מעורב 70\",\"מנצ׳גו\",\"קממבר\",\"חלב עיזים\",\"אסיאגו\",\"רוקפור\",\"אשל\",\"לבנה צאן\",\"מעדן חלב\",\"יוגורט 1.5%\",\"יוגורט יווני 5%\",\"ריקוטה 9%\",\"שמנת 32%\",\"יוגורט בטעם פירות 39\",\"לחם דגנים\",\"לחמניות כוסמין\",\"לאפה מחמצת\",\"קרקרים כוסמין\",\"בריוש\",\"בצק עלים\",\"קרואסון שקדים\",\"קראנץ׳ שוקולד\",\"טארטלט וניל\",\"מקרונים\",\"בשר לטחינה 10%\",\"אנשובי טרי\",\"קלמארי שלם\",\"פסטרמה עוף חריפה\",\"מרגז\",\"המבורגר הודו\",\"קבב טלה\",\"בשר ראש\",\"עוף שלם טרי\",\"כבדי בקר\",\"קבב מתובל 39\",\"קמח כוסמין לבן\",\"ג׳לטין\",\"פלפל לבן\",\"חוואייג׳\",\"הל\",\"פלפל אנגלי\",\"שומשום שחור\",\"קוקוס טחון\",\"תפוח עץ\",\"תפוז\",\"אפרסק\",\"תמר\",\"מלפפון\",\"ברוקולי\",\"חסה\",\"נענע\",\"סלרי\",\"פטריות\",\"סלק\",\"דלעת\",\"יוגורט יווני\",\"קוטג'\",\"ריקוטה\",\"חלבון ביצה\",\"משקה סויה\",\"קפיר\",\"לחם שחור\",\"באגט\",\"לחמנייה\",\"בייגל\",\"לחם\",\"מצה\",\"ראסק\",\"פיתה\",\"בשר טחון\",\"אנטריקוט\",\"קבב\",\"נקניקיות\",\"בייקון הודו\",\"שווארמה הודו\",\"פרגיות\",\"אורז\",\"פסטה\",\"קמח\",\"קקאו\",\"אבקת אפייה\",\"מלח\",\"פפריקה\",\"כורכום\",\"בהרט\",\"שמן קנולה\",\"שמן סויה\",\"טחינה\",\"שעועית\",\"רסק עגבניות\",\"שעועית אפויה\",\"רוטב צ'ילי\",\"פסטו\",\"תבלין שווארמה\",\"פירורי לחם\",\"ירקות קפואים\",\"פיצה קפואה\",\"שניצל דג\",\"שניצל עוף\",\"המבורגר\",\"אדממה\",\"מיץ תפוזים\",\"מיץ תפוחים\",\"קפה\",\"משקה אנרגיה\",\"סודה\",\"בירה\",\"בננה\",\"קלמנטינה\",\"אשכולית\",\"אבטיח\",\"מלון\",\"קיווי\",\"פסיפלורה\",\"עגבנייה\",\"פלפל\",\"כרובית\",\"בזיליקום\",\"בצל ירוק\",\"תרד\",\"מנגולד\",\"חלב\",\"חלב\",\"שמנת\",\"יוגורט\",\"מוצרלה\",\"משקה חלב\",\"לחם מלא\",\"לאפה\",\"בורקס\",\"בורקס\",\"כרעיים עוף\",\"סלמון\",\"סלמון\",\"קלמרי\",\"שניצל עוף\",\"קוסקוס\",\"קמח\",\"קמח\",\"סולת\",\"סוכר\",\"פלפל שחור\",\"אדממה\",\"עגבניות משומרות\",\"רוטב סויה\",\"רוטב טריאקי\",\"קטשופ\",\"שומשום\",\"פירורי לחם\",\"ירקות קפואים\",\"ירקות קפואים\",\"פיצה קפואה\",\"בצק פילו\",\"פלאפל\",\"פיתה\",\"תירס קפוא\",\"משקה קולה\",\"מיץ ענבים\",\"בירה\",\"תפוח פינק ליידי\",\"אגס נאשי\",\"לימון\",\"פטל\",\"דובדבן\",\"שסק\",\"קרמבולה\",\"ליצ׳י\",\"שזיף שחור\",\"פקאן\",\"מלפפון חממה\",\"עגבניית שרי\",\"יין אדום\",\"יין לבן\",\"פפאיה\",\"קליפת לימון\",\"רמבוטן\",\"נקטרינה לבנה\",\"פיסטוק\",\"פלפל שושקה\",\"חלפיניו\",\"קייל\",\"בייבי עלים\",\"מנגולד קצוץ\",\"לפת\",\"שורש סלרי\",\"שומר\",\"ארטישוק ירושלמי\",\"קישוא עגול\",\"בצל לבן\",\"אספרגוס לבן\",\"פטריות אויסטר\",\"קשקבל\",\"ברי\",\"פטה עיזים\",\"גרוייר\",\"אמנטל\",\"טל העמק\",\"משקה שיבולת שועל\",\"חלומי\",\"מסקרפונה 250ג\",\"לחם שאור מלא\",\"עוגיות טחינה\",\"עוגת דבש\",\"מלבי\",\"פילה מדומה\",\"אוסובוקו\",\"רוסטביף\",\"סלמי\",\"נסיכת הנילוס\",\"גפילטע פיש\",\"צלעות טלה\",\"חזה עוף אורגני\",\"לשון בקר\",\"שוק טלה\",\"קמח כוסמין מלא\",\"קמח תירס\",\"קמח אורז\",\"שמרים יבשים\",\"גראם מסאלה\",\"זרעי חרדל\",\"פיסטוקים קלופים\",\"פתיתי קוקוס\",\"צימוקים בהירים\",\"תמרים קצוצים\",\"משמשים מיובשים\",\"איטריות אורז\",\"סובה\",\"אבקת מרק ירקות\",\"אבקת מרק בצל\",\"סרירצ׳ה\",\"מיסו בהיר\",\"עגבניות מיובשות\",\"פדרון\",\"מיזונה\",\"עלי גפן\",\"תפוח אדמה אדום\",\"באק צ׳וי\",\"אספרגוס\",\"אבוקדו ריד\",\"שיטאקה\",\"פורצ׳יני\",\"עלי כורכום\",\"עשבי פרובנס\",\"יוגורט עיזים\",\"סקיר\",\"משקה לוז\",\"גבינת שמנת שום ועשבי תיבול\",\"פרובולונה\",\"קוטג' 3%\",\"פרמזן חתיכה\",\"צפתית עזים\",\"לחם כוסמין\",\"לחם שיבולת שועל\",\"פרעצל\",\"טורטייה\",\"פיתות מיני\",\"חלה מתוקה\",\"מאפינס שוקולד\",\"פאי תפוחים\",\"בקלאווה\",\"חזה הודו\",\"שייטל\",\"צלי כתף 6\",\"לברק\",\"בקלה\",\"מרלוזה\",\"טונה סטייק\",\"דניס שלם\",\"סרדינים\",\"מולים\",\"כתף טלה\",\"שווארמה עוף מתובלת\",\"פרגיות במרינדה\",\"טחול עוף\",\"הרינג\",\"סוכר וניל\",\"מלח ים\",\"פפריקה מעושנת\",\"קארי\",\"אניס כוכבי\",\"פפריקה חריפה\",\"אגוזי לוז טחונים\",\"שקדים מולבנים\",\"בוטנים קלויים\",\"חמוציות מיובשות\",\"חיטה מלאה\",\"שעורה קלויה\",\"אודון\",\"נורי\",\"רוטב דגים\",\"מיסו כהה\",\"רוטב אויסטר\",\"חרדל גרגרים\",\"חמאת בוטנים חלקה\",\"צימוקים כהים\",\"שזיפים מיובשים\",\"גריסים\",\"בורגול גס\",\"קוביות עגבניות\",\"טחינה מלאה\",\"חמאת שקדים\",\"גלוקוזה נוזלית\",\"ניוקי קפוא\",\"ירקות לוווק קפואים\",\"פלפל ממולא קפוא\",\"גלידת שוקולד\",\"בצק סיגר מרובע\",\"סודה בטעמים\",\"תה קמומיל\",\"קפה פילטר\",\"קמבוצ׳ה\",\"יין רוזה\",\"נייר אפייה\",\"חמאת בוטנים קראנצ׳י\",\"סירופ מייפל\",\"סירופ תירס\",\"בלינצ׳ס תפוחי אדמה\",\"נאגטס עוף\",\"קובה קפוא\",\"שווארמה צמחית\",\"מאפה תפוחי אדמה קפוא\",\"בצק פיצה קפוא\",\"קציצות דג קפואות\",\"תה נענע ולימון\",\"בירה IPA\",\"תה היביסקוס\",\"נייר סופג\",\"פירה קפוא\",\"כרוב ממולא קפוא\",\"קציצות ירק קפואות\",\"שניצל תירס קפוא\",\"קרם פטיסייר קפוא\",\"טורטיה קפואה\",\"סמבוסק גבינה קפוא\",\"מיץ מנגו\",\"מיץ פסיפלורה\",\"קפסולות קפה\",\"משקה אלוורה\",\"סיידר חם\",\"חמאת קשיו\",\"בלינצ׳ס גבינה\",\"בורקס תרד קפוא\",\"שקדי מרק קפואים\",\"חלת שוקולד קפואה\",\"שלגון וניל\",\"לזניה קפואה\",\"משקה חלב וניל\",\"יין מוסקט\"].\n- DO NOT invent or use any ingredient outside of this list.\n- You MUST use one of the following units for ingredients: ליטר, מ\"ל, ק\"ג, גרם, יחידה.\n- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list.\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).\n\n",
+    "output": {
+      "title": "סלט קיץ רענן עם גבינת עיזים",
+      "photoUrl": "https://spoonacular.com/recipeImages/636636-556x370.jpg",
+      "tags": [
+        "טבעוני",
+        "סלט",
+        "קל"
+      ],
+      "steps": [
+        "חותכים את הבצל, המלפפון, העגבנייה והחסה לחתיכות קטנות.",
+        "מערבבים את הירקות בקערה גדולה.",
+        "מוסיפים את גבינת העיזים, שמן הזית, המלח והפלפל.",
+        "מערבבים היטב ומגישים."
+      ],
+      "ingredients": [
+        {
+          "name": "חסה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "בצל",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "מלפפון",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "עגבנייה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "גבינת עיזים",
+          "qty": 100,
+          "unit": "גרם"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 2,
+          "unit": "כף"
+        },
+        {
+          "name": "מלח",
+          "qty": 1,
+          "unit": "מ\"ל"
+        },
+        {
+          "name": "פלפל",
+          "qty": 1,
+          "unit": "יחידה"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 9876,
+    "createdAt": "2025-09-17T13:28:04.060Z",
+    "userId": null
+  }
+]

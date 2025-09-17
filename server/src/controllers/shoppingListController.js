@@ -1,12 +1,12 @@
 // controllers/shoppingListController.js
-const mongoose = require('mongoose');
-const ShoppingList = require('../models/shoppingListSchema');
-const Recipe = require('../models/recipeSchema');
-const Ingredient = require('../models/ingredientSchema');
+import mongoose from 'mongoose';
+import ShoppingList from '../models/shoppingListSchema.js';
+import Recipe from '../models/recipeSchema.js';
+import Ingredient from '../models/ingredientSchema.js';
 
 const { isValidObjectId } = mongoose;
 
-exports.buildList = async (req, res) => {
+export const buildList = async (req, res) => {
     
     try {
         const { userId, title = "רשימת קניות", recipeIds = [], notes } = req.body;
@@ -40,14 +40,14 @@ exports.buildList = async (req, res) => {
     }
 };
 
-exports.getListById = async (req, res) => {
+export const getListById = async (req, res) => {
     // TODO: renvoyer une liste par son id
 };
 
-exports.updateItem = async (req, res) => {
+export const updateItem = async (req, res) => {
     // TODO: mettre à jour un item précis
 };
 
-exports.updateStatus = async (req, res) => {
+export const updateStatus = async (req, res) => {
     // TODO: changer le status de la liste (open/done)
 };

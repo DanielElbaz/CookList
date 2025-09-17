@@ -1,14 +1,19 @@
-require('dotenv').config();
-const express = require('express');
-const recipeRoutes = require('./routes/recipes');
-const shoppingListRoutes = require('./routes/shoppingLists');
+import 'dotenv/config';
+import express from 'express';
+import recipeRoutes from './routes/recipes.js';
+import shoppingListRoutes from './routes/shoppingLists.js';
+import cors from 'cors';
+import { connectMongo } from './models/index.js';
+import { loadCanonicalNames } from './utils/ingredientCache.js';
+
 const app = express();
-const cors=require('cors')
 const PORT = process.env.PORT || 3000;
-const { connectMongo } = require('./models/index');
 
 connectMongo(process.env.MONGODB_URI)
-  .then(() => console.log('MongoDB connected'))
+  .then(async () => {
+    console.log('MongoDB connected');
+    await loadCanonicalNames();
+  })
   .catch(err => console.error('MongoDB connection error', err));
 
 
@@ -16,22 +21,11 @@ connectMongo(process.env.MONGODB_URI)
 app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
 app.use(express.json());
 
-const Ingredient = require('./models/ingredientSchema');
-
-app.get('/_debug/ingredient/:id', async (req, res) => {
-  const ing = await Ingredient.findById(req.params.id).lean();
-  res.json({
-    uri: process.env.MONGODB_URI,
-    db:Ingredient.db.name,
-    collection:Ingredient.collection.name,
-    exists: !!ing,
-    ing
-  });
-});
 
 // Mount the recipe routes
 app.use('/recipes', recipeRoutes);
 app.use('/lists', shoppingListRoutes);
+
 
 // A simple root endpoint for health checks
 app.get('/', (req, res) => {
