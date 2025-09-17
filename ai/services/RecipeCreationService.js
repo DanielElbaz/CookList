@@ -1,6 +1,8 @@
 import geminiService from "./geminiService.js";
 import AiEventLogger from "./AiEventLogger.js";
 import { getRecipeImage } from "./spoonacularHelper.js";
+import { getCanonicalNames } from "../../server/src/utils/ingredientCache.js";
+
 
 class RecipeCreationService {
   constructor() {
@@ -8,7 +10,7 @@ class RecipeCreationService {
   }
 
   validateRecipe(recipe) {
-    const allowedUnits = ["ליטר", "מ\"ל", "ק\"ג", "גרם", "יחידה"];
+    const allowedUnits = ["ליטר", "מ\"ל", "ק\"ג", "גרם", "יחידה","כוס","כף","כפית"];
     for (const ingredient of recipe.ingredients) {
       if (!allowedUnits.includes(ingredient.unit)) {
         throw new Error(`Invalid unit "${ingredient.unit}" found in recipe.`);
@@ -70,26 +72,29 @@ class RecipeCreationService {
       }
     }
   }
-
+  
   async createFromText(recipeText = "") {
+    const allowedIngredients = getCanonicalNames();
     const prompt = `
 You are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:
 
 {
   "title": "string",
+  "photoUrl": "string",
+  "tags": ["string"],
+  "steps": ["string"],
   "ingredients": [
     {
       "name": "string",
       "qty": number,
       "unit": "ליטר|מ\"ל|ק\"ג|גרם|יחידה"
     }
-  ],
-  "steps": ["string"],
-  "tags": ["string"],
-  "photoUrl": "string"
+  ]
 }
 
 VALIDATION:
+- You may ONLY use ingredients from the following list: ${JSON.stringify(allowedIngredients)}.
+- DO NOT invent or use any ingredient outside of this list.
 - You MUST use one of the following units for ingredients: ליטר, מ"ל, ק"ג, גרם, יחידה.
 - Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.
 - All text must be entirely in Hebrew.
