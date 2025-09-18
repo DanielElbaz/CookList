@@ -3,11 +3,11 @@ import mongoose from 'mongoose';
 import ShoppingList from '../models/shoppingListSchema.js';
 import Recipe from '../models/recipeSchema.js';
 import Ingredient from '../models/ingredientSchema.js';
-
+import { DEPTS } from '../models/ingredientSchema.js';
 const { isValidObjectId } = mongoose;
 
 export const buildList = async (req, res) => {
-    
+
     try {
         const { userId, title = "רשימת קניות", recipeIds = [], notes } = req.body;
 
@@ -15,8 +15,14 @@ export const buildList = async (req, res) => {
             return res.status(400).json({ success: false, message: 'userId et recipeIds[] sont requis' });
         }
 
+        for (const id of recipeIds) {
+            if (!isValidObjectId(id)) {
+                return res.status(400).json({ success: false, message: `Invalid recipe id: ${id}` });
+            }
+        }
+
         const recipes = await Recipe.find({ _id: { $in: recipeIds } })
-            .populate('ingredients.ingredientId', 'name dept') 
+            .populate('ingredients.ingredientId', 'canonicalName dept')
             .lean();
 
         const flattened = []; // to extract the ingredients
@@ -25,7 +31,7 @@ export const buildList = async (req, res) => {
                 const ingDoc = ing.ingredientId;
                 if (!ingDoc || !ingDoc._id) continue;
 
-                
+
                 const normalized = normalizeUnit(
                     { ingredientId: ingDoc._id, qty: ing.qty, unit: ing.unit },
                     ingDoc.dept

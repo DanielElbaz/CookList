@@ -32,7 +32,7 @@ export const getAllRecipes = async (req, res) => {
         console.error(error);
         res.status(500).json({ success: false, message: 'Server Error' });
     }
-};
+}; // works
 
 
 export const getRecipeByIngredients = async (req, res) => {
@@ -80,6 +80,9 @@ export const createRecipe = async (req, res) => {
             title,
             photoUrl,
             tags: formattedTags,
+            category,
+            difficulty,
+            prepTime,
             steps: formattedSteps,
             ingredients: ingredientDocs
         });
@@ -95,7 +98,7 @@ export const createRecipe = async (req, res) => {
         console.error(error);
         res.status(500).json({ success: false, message: 'Server Error' });
     }
-};
+}; // works
 
 export const generateRecipe = async (req, res) => {
     try {
@@ -120,6 +123,9 @@ export const generateRecipe = async (req, res) => {
             title: generated.title,
             photoUrl: generated.photoUrl,
             tags: generated.tags,
+            category:generated.category,
+            difficulty:generated.difficulty,
+            prepTime:generated.prepTime,
             steps: generated.steps,
             ingredients: ingredientDocs              
         });
@@ -136,7 +142,7 @@ export const generateRecipe = async (req, res) => {
         console.error(error);
         res.status(500).json({ success: false, message: "Server Error" });
     }
-}
+} //works
 
 export const updateRecipe = async (req, res) => {
     try {
@@ -211,6 +217,6 @@ export const deleteRecipe = async (req, res) => {
         console.error(error);
         res.status(500).json({ success: false, message: 'Server Error' });
     }
-};
+}; //works
 
 
