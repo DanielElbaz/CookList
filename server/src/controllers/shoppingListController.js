@@ -1,59 +1,116 @@
-// controllers/shoppingListController.js
 import mongoose from 'mongoose';
 import ShoppingList from '../models/shoppingListSchema.js';
 import Recipe from '../models/recipeSchema.js';
-import Ingredient from '../models/ingredientSchema.js';
 import { DEPTS } from '../models/ingredientSchema.js';
+
 const { isValidObjectId } = mongoose;
 
+// util: groupage pour la réponse
+function groupItemsByDept(populatedItems) {
+  const byDept = {};
+  for (const d of DEPTS) byDept[d] = [];
+
+  for (const it of populatedItems) {
+    const ing = it.ingredientId; // populated
+    const dept = ing?.dept || 'מצרכים יבשים';
+    const canonicalName = ing?.canonicalName || '—';
+
+    (byDept[dept] ||= []).push({
+      itemId: it._id,
+      ingredientId: ing?._id,
+      canonicalName,
+      dept,
+      qty: it.qty,
+      unit: it.unit
+    });
+  }
+
+  // tri alphabétique (hébreu-friendly)
+  for (const d of Object.keys(byDept)) {
+    byDept[d].sort((a, b) => (a.canonicalName || '').localeCompare(b.canonicalName || '', 'he'));
+  }
+  return byDept;
+}
+
+/**
+ * POST /lists/build
+ * Body: { title?: string, recipeIds: ObjectId[], notes?: string }
+ * Effet: crée une ShoppingList "open" en DB, items agrégés par (ingredientId, unit)
+ * Retour: listId + byDept
+ */
 export const buildList = async (req, res) => {
+  try {
+    const { title = 'רשימת קניות', recipeIds = []} = req.body;
 
-    try {
-        const { userId, title = "רשימת קניות", recipeIds = [], notes } = req.body;
-
-        if (!userId || !Array.isArray(recipeIds) || recipeIds.length === 0) {
-            return res.status(400).json({ success: false, message: 'userId et recipeIds[] sont requis' });
-        }
-
-        for (const id of recipeIds) {
-            if (!isValidObjectId(id)) {
-                return res.status(400).json({ success: false, message: `Invalid recipe id: ${id}` });
-            }
-        }
-
-        const recipes = await Recipe.find({ _id: { $in: recipeIds } })
-            .populate('ingredients.ingredientId', 'canonicalName dept')
-            .lean();
-
-        const flattened = []; // to extract the ingredients
-        for (const r of recipes) {
-            for (const ing of r.ingredients) {
-                const ingDoc = ing.ingredientId;
-                if (!ingDoc || !ingDoc._id) continue;
-
-
-                const normalized = normalizeUnit(
-                    { ingredientId: ingDoc._id, qty: ing.qty, unit: ing.unit },
-                    ingDoc.dept
-                );
-
-                flattened.push(normalized);
-            }
-        }
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ success: false, message: 'Server Error' });
+    if (!Array.isArray(recipeIds) || recipeIds.length === 0) {
+      return res.status(400).json({ success: false, message: 'Provide recipeIds[]' });
     }
-};
+    for (const id of recipeIds) {
+      if (!isValidObjectId(id)) {
+        return res.status(400).json({ success: false, message: `Invalid recipe id: ${id}` });
+      }
+    }
 
-export const getListById = async (req, res) => {
-    // TODO: renvoyer une liste par son id
-};
+    // Récupère les recettes et popule juste ce qu’il faut
+    const recipes = await Recipe.find({ _id: { $in: recipeIds } })
+      .populate('ingredients.ingredientId', 'canonicalName dept') // on a besoin de name + dept
+      .lean();
 
-export const updateItem = async (req, res) => {
-    // TODO: mettre à jour un item précis
-};
+    if (!recipes || recipes.length === 0) {
+      return res.status(404).json({ success: false, message: 'No recipes found' });
+    }
 
-export const updateStatus = async (req, res) => {
-    // TODO: changer le status de la liste (open/done)
+    // Agrège par (ingredientId + unit) — AUCUNE conversion
+    // key = `${ingredientId}|${unit}`
+    const agg = new Map();
+    for (const r of recipes) {
+      for (const ri of (r.ingredients || [])) {
+        const ingDoc = ri.ingredientId; // populated doc
+        if (!ingDoc?._id) continue;
+
+        const unit = String(ri.unit || '').trim();
+        const key = `${String(ingDoc._id)}|${unit}`;
+
+        if (!agg.has(key)) {
+          agg.set(key, { ingredientId: ingDoc._id, qty: 0, unit });
+        }
+        agg.get(key).qty += Number(ri.qty) || 0;
+      }
+    }
+
+    const items = Array.from(agg.values()); // conforme à ListItemSchema
+
+    // Création + sauvegarde en DB
+    const list = await ShoppingList.create({
+      title,
+      status: 'open',
+      items,
+      source: { recipeIds}
+    });
+
+    // Re-populate pour renvoyer groupé par départements
+    const populated = await ShoppingList.findById(list._id)
+      .populate('items.ingredientId', 'canonicalName dept')
+      .lean();
+
+    const byDept = groupItemsByDept(populated.items);
+
+    return res.status(201).json({
+      success: true,
+      data: {
+        listId: populated._id,
+        title: populated.title,
+        status: populated.status,
+        summary: {
+          recipeCount: recipes.length,
+          uniqueLines: items.length,
+          totalItems: populated.items.length
+        },
+        byDept
+      }
+    });
+  } catch (err) {
+    console.error('buildList error:', err);
+    return res.status(500).json({ success: false, message: 'Server Error' });
+  }
 };
