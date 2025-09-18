@@ -82,6 +82,9 @@ You are a creative recipe generator. Generate ONE complete recipe strictly in JS
   "title": "string",
   "photoUrl": "string",
   "tags": ["string"],
+  "category":"string",
+  "difficulty":"string",
+  "prepTime":"string",
   "steps": ["string"],
   "ingredients": [
     {
@@ -95,13 +98,16 @@ You are a creative recipe generator. Generate ONE complete recipe strictly in JS
 VALIDATION:
 - You may ONLY use ingredients from the following list: ${JSON.stringify(allowedIngredients)}.
 - DO NOT invent or use any ingredient outside of this list.
-- You MUST use one of the following units for ingredients: ליטר, מ"ל, ק"ג, גרם, יחידה.
-- Any other unit (e.g., כף, כפית, קורט) is FORBIDDEN.
+- You MUST GENERATE RECIPE with one or more of the following units: ליטר, מ"ל, ק"ג, גרם, יחידה, כוס, כף, כפית.
+- Do NOT use any other unit outside this list.
+- The prepTime has to be in minutes (eg. 30 דק).
+- There is only 3 difficulties: (קל, בינוני או קשה).
+- Choose a category from the given list:'ארוחת בוקר', 'ארוחת צהריים', 'ארוחת ערב', 'קינוח', 'נשנוש', 'מנת פתיחה', 'מרק', 'סלט', 'פסטה', 'בשרי', 'דגים', 'צמחוני'.
 - All text must be entirely in Hebrew.
-- Include 1–3 relevant tags from the predefined list.
+- Include 1–3 relevant tags from the predefined list: 'כשר', 'טבעוני', 'ללא גלוטן', 'ללא חלב', 'דל פחממות', 'קיטו', 'פלאו', 'ים-תיכוני', 'אסיאתי', 'מקסיקני', 'איטלקי'
 - Provide 3–6 realistic preparation steps.
 - Include at least one dietary tag.
-- Provide a realistic photo URL (can be placeholder; will auto-update via Spoonacular).
+- Provide a realistic photo URL from spoonacular only, if you dont find a proper photo use this url: https://redthread.uoregon.edu/files/original/affd16fd5264cab9197da4cd1a996f820e601ee4.png .
 ${recipeText ? `Use this inspiration: "${recipeText}"` : ""}
 `;
 
