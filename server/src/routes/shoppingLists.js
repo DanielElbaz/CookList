@@ -6,8 +6,7 @@ import * as shoppingListController from '../controllers/shoppingListController.j
 router.post('/build', shoppingListController.buildList);
 
 // // Get a shopping list
-// router.get('/:id', shoppingListController.getListById);
-
+router.get('/:id', shoppingListController.getListById);
 
 // // Update an item in the shopping list
 // router.put('/:id/items/:itemId', shoppingListController.updateItem);
