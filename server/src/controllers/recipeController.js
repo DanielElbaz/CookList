@@ -4,6 +4,7 @@ const { isValidObjectId } = mongoose;
 import Ingredient from '../models/ingredientSchema.js';
 import RecipeCreationService from '../../../ai/services/RecipeCreationService.js';
 
+
 export const getAllRecipes = async (req, res) => {
     try {
         const { search, tags, limit = 150 } = req.query;
@@ -69,7 +70,7 @@ export const createRecipe = async (req, res) => {
             }
             ingredientDocs.push({
                 ingredientId: ingredientDoc._id,
-                name:ing.name,
+                name: ing.name,
                 qty: ing.qty,
                 unit: ing.unit
             });
@@ -103,7 +104,15 @@ export const createRecipe = async (req, res) => {
 
 export const generateRecipe = async (req, res) => {
     try {
-        const generated = await RecipeCreationService.createFromText();
+        const raw =
+            typeof req.body?.recipeText === 'string' ? req.body.recipeText :
+                typeof req.body?.text === 'string' ? req.body.text :
+                    typeof req.query?.recipeText === 'string' ? req.query.recipeText :
+                        typeof req.query?.text === 'string' ? req.query.text :
+                            '';
+        const userText = raw.slice(0, 2000);
+
+        const generated = userText ? await RecipeCreationService.createFromText(userText) : await RecipeCreationService.createFromText()
         console.log(generated)
         console.log("finished print generated")
         // Convert ingredient names to ObjectIds

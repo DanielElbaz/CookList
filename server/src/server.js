@@ -18,7 +18,22 @@ connectMongo(process.env.MONGODB_URI)
 
 
 // Middleware to parse JSON bodies
-app.use(cors({ origin: 'http://localhost:5173', credentials: true }));
+const allowedOrigins = [
+  "http://localhost:5173",                 
+  "https://cooklist-frontend.onrender.com"    
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    // autoriser sans origin (ex: Postman) ou si origin est dans la liste
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
+}));
 app.use(express.json());
 
 
