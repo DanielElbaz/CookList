@@ -2,7 +2,6 @@ import fs from "fs/promises";
 import path from "path";
 import RecipeCreationService from "./RecipeCreationService.js";
 
-
 class BulkRecipeSeederService {
   constructor(outputDir = "./output") {
     this.outputDir = outputDir;
@@ -13,9 +12,6 @@ class BulkRecipeSeederService {
       title: raw.title || "מתכון ללא כותרת",
       photoUrl: raw.photoUrl || null,
       tags: Array.isArray(raw.tags) ? raw.tags : [],
-      category: raw.category,
-      difficulty: raw.difficulty,
-      prepTime: raw.prepTime,
       steps: Array.isArray(raw.steps) ? raw.steps : [],
       ingredients: Array.isArray(raw.ingredients)
         ? raw.ingredients.map(i => ({
@@ -27,15 +23,27 @@ class BulkRecipeSeederService {
     };
   }
 
-  async seed(count = 20) {
+  async seed(count = 10) {
     const results = [];
+    const recipes = [
+      "ספגטי ברוטב עגבניות",
+      "עוף בתנור",
+      "בקר עם אורז",
+      "תבשיל ירקות",
+      "שקשוקה",
+      "נודלס עם ירקות",
+      "סלט יווני",
+      "מרק עדשים",
+      "דג טונה",
+      "עוגת שוקולד"
+    ];
     await fs.mkdir(this.outputDir, { recursive: true });
 
     for (let i = 0; i < count; i++) {
       try {
-        const rawRecipe = await RecipeCreationService.createFromText();
+        const rawRecipe = await RecipeCreationService.createFromText(recipes[i]);
         const recipe = this.normalizeRecipe(rawRecipe);
-        results.push(recipe);
+        results.push({ success: true, recipe });
       } catch (err) {
         console.error("Failed to create recipe:", err.message);
         results.push({ success: false, error: err.message });
