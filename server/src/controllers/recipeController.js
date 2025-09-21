@@ -40,7 +40,7 @@ export const getRecipeByIngredients = async (req, res) => {
         const { list } = req.query;
         const ingredientIds = list.split(',').map(id => id.trim());
         const recipes = await Recipe.find({ 'ingredients.ingredientId': { $in: ingredientIds } })
-            .populate('ingredients.ingredientId', 'name')
+            .populate('ingredients.ingredientId', 'canonicalName')
             .lean();
         res.status(200).json({
             success: true,
@@ -54,7 +54,7 @@ export const getRecipeByIngredients = async (req, res) => {
 
 export const createRecipe = async (req, res) => {
     try {
-        const { title, photoUrl, tags, steps, ingredients } = req.body;
+        const { title, photoUrl, tags, category, difficulty, prepTime, steps, ingredients } = req.body;
         if (!title || !ingredients || !Array.isArray(ingredients) || ingredients.length === 0) {
             return res.status(400).json({ success: false, message: 'Title and at least one ingredient are required' });
         }
@@ -69,6 +69,7 @@ export const createRecipe = async (req, res) => {
             }
             ingredientDocs.push({
                 ingredientId: ingredientDoc._id,
+                name:ing.name,
                 qty: ing.qty,
                 unit: ing.unit
             });
@@ -123,11 +124,11 @@ export const generateRecipe = async (req, res) => {
             title: generated.title,
             photoUrl: generated.photoUrl,
             tags: generated.tags,
-            category:generated.category,
-            difficulty:generated.difficulty,
-            prepTime:generated.prepTime,
+            category: generated.category,
+            difficulty: generated.difficulty,
+            prepTime: generated.prepTime,
             steps: generated.steps,
-            ingredients: ingredientDocs              
+            ingredients: ingredientDocs
         });
 
         await newRecipe.save();
