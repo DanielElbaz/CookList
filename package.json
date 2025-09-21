@@ -4,8 +4,8 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node server/src/server.js",
+    "dev": "nodemon server/src/server.js"
   },
   "dependencies": {
     "@google/gemini-cli": "^0.4.1",
