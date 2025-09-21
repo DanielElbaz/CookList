@@ -5,7 +5,7 @@ import RecipeCreationService from "./RecipeCreationService.js";
 async function test() {
   await connectMongo(process.env.MONGODB_URI)
   await loadCanonicalNames();
-  const recipe = await RecipeCreationService.createFromText("Beef with rice");
+  const recipe = await RecipeCreationService.createFromText("Chicken with potatoes");
   console.log(recipe);
 }
 

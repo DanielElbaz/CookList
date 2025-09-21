@@ -96,6 +96,7 @@ You are a creative recipe generator. Generate ONE complete recipe strictly in JS
 }
 
 VALIDATION:
+${recipeText ? `\n### USER REQUEST (follow strictly):\n${recipeText}\n` : ''}
 - You may ONLY use ingredients from the following list: ${JSON.stringify(allowedIngredients)}.
 - DO NOT invent or use any ingredient outside of this list.
 - You MUST GENERATE RECIPE with one or more of the following units: ליטר, מ"ל, ק"ג, גרם, יחידה, כוס, כף, כפית.
