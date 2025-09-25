@@ -13,7 +13,18 @@ function groupItemsByDeptHybrid(items /* peut être peuplé ou non */) {
       ? it.ingredientId
       : null;
 
-    const dept = ingDoc?.dept || it.dept || 'מצרכים יבשים';
+    let dept = ingDoc?.dept || it.dept || 'מצרכים יבשים';
+    
+    // Ensure dept is valid - if not found in DEPTS, use 'אחר'
+    if (!DEPTS.includes(dept)) {
+      dept = 'אחר';
+    }
+    
+    // Ensure the dept exists in byDept object
+    if (!byDept[dept]) {
+      byDept[dept] = [];
+    }
+    
     const name = ingDoc?.canonicalName || it.ingredientName || '—';
     byDept[dept].push({
       itemId: it._id,
@@ -51,6 +62,7 @@ export const buildList = async (req, res) => {
       return res.status(404).json({ success: false, message: 'No recipes found' });
     }
 
+
     // 2) Collecte des noms à résoudre -> Ingredient docs
     const namesSet = new Set();
     for (const r of recipes) {
@@ -74,6 +86,7 @@ export const buildList = async (req, res) => {
     // 3) Agrégat par (ingredientId|unit) en gardant aussi ingredientName + dept
     const agg = new Map();
     const missing = [];
+    const missingItems = new Map(); // For missing ingredients
 
     for (const r of recipes) {
       for (const ri of (r.ingredients || [])) {
@@ -81,17 +94,36 @@ export const buildList = async (req, res) => {
         if (!rawName) continue;
 
         const doc = mapByCanonical.get(rawName) || mapByName.get(rawName);
-        if (!doc) { missing.push(rawName); continue; }
-
         const unit = String(ri.unit || '').trim();
         const qtyNum = Number(ri.qty);
+        
+        if (!doc) { 
+          // Add to missing ingredients list
+          missing.push(rawName);
+          
+          // Also add to shopping list as a missing item if it has valid qty/unit
+          if (unit && Number.isFinite(qtyNum)) {
+            const missingKey = `missing_${rawName}|${unit}`;
+            const prevMissing = missingItems.get(missingKey);
+            missingItems.set(missingKey, {
+              ingredientId: null,                    // null for missing ingredients
+              ingredientName: rawName,               // raw name from recipe
+              dept: 'אחר',                          // default department
+              qty: (prevMissing?.qty || 0) + qtyNum,
+              unit,
+              isMissing: true                        // flag to identify missing items
+            });
+          }
+          continue; 
+        }
+
         if (!unit || !Number.isFinite(qtyNum)) continue;
 
         const key = `${String(doc._id)}|${unit}`;
         const prev = agg.get(key);
         agg.set(key, {
           ingredientId: doc._id,                 // pour schéma avec ref
-          ingredientName: doc.canonicalName,     // pour schéma qui l’exige
+          ingredientName: doc.canonicalName,     // pour schéma qui l'exige
           dept: doc.dept,                        // fallback si pas de populate
           qty: (prev?.qty || 0) + qtyNum,
           unit
@@ -99,11 +131,17 @@ export const buildList = async (req, res) => {
       }
     }
 
-    const items = Array.from(agg.values());
+    // Combine found and missing items
+    const foundItems = Array.from(agg.values());
+    const missingItemsArray = Array.from(missingItems.values());
+    const items = [...foundItems, ...missingItemsArray];
+    
+
+    // Only return error if no items at all (including missing ones)
     if (!items.length) {
       return res.status(400).json({
         success: false,
-        message: 'No items could be resolved from recipes',
+        message: 'No valid ingredients found in recipes',
         missingIngredients: [...new Set(missing)]
       });
     }
@@ -123,6 +161,11 @@ export const buildList = async (req, res) => {
 
     const byDept = groupItemsByDeptHybrid(populated?.items || items);
 
+    // Prepare response with useful information
+    const uniqueMissing = [...new Set(missing)];
+    const foundCount = foundItems.length;
+    const missingCount = missingItemsArray.length;
+    
     return res.status(201).json({
       success: true,
       data: {
@@ -132,11 +175,16 @@ export const buildList = async (req, res) => {
         summary: {
           recipeCount: recipes.length,
           uniqueLines: items.length,
-          totalItems: (populated?.items?.length ?? items.length)
+          totalItems: (populated?.items?.length ?? items.length),
+          foundIngredients: foundCount,
+          missingIngredients: missingCount
         },
         byDept,
-        missingIngredients: [...new Set(missing)]
-      }
+        missingIngredients: uniqueMissing
+      },
+      message: uniqueMissing.length > 0 
+        ? `רשימת קניות נוצרה בהצלחה. ${missingCount} מרכיבים לא נמצאו במאגר ונוספו כ"אחר": ${uniqueMissing.join(', ')}`
+        : 'רשימת קניות נוצרה בהצלחה'
     });
   } catch (err) {
     console.error('buildList error:', err);

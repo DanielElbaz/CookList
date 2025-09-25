@@ -5145,5 +5145,151 @@
     "latencyMs": 17049,
     "createdAt": "2025-09-21T11:47:24.388Z",
     "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "7481f7008e3b0ae5ec3ed02be762ce944fa6f7f3f85b0bbd13704cceb2dcb650",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"category\":\"string\",\n  \"difficulty\":\"string\",\n  \"prepTime\":\"string\",\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n\n- You may ONLY use ingredients from the following list: [\"בטטה\",\"קינואה\",\"תפוח עץ\",\"בצל\",\"כוסברה\",\"שמיר\",\"מלח\",\"פלפל שחור\",\"לימון\",\"שמן זית\",\"חזה עוף\",\"פטריות\",\"פלפל שחור גרגרים\",\"זעתר\",\"צלי כתף\",\"אורז\",\"רסק עגבניות\",\"מים\",\"כורכום\",\"פפריקה\",\"קישוא\",\"פלפל\",\"קולורבי\",\"ביצים\",\"פיתה\"].\n- DO NOT invent or use any ingredient outside of this list.\n- You MUST GENERATE RECIPE with one or more of the following units: ליטר, מ\"ל, ק\"ג, גרם, יחידה, כוס, כף, כפית.\n- Do NOT use any other unit outside this list.\n- The prepTime has to be in minutes (eg. 30 דק).\n- There is only 3 difficulties: (קל, בינוני או קשה).\n- Choose a category from the given list:'ארוחת בוקר', 'ארוחת צהריים', 'ארוחת ערב', 'קינוח', 'נשנוש', 'מנת פתיחה', 'מרק', 'סלט', 'פסטה', 'בשרי', 'דגים', 'צמחוני'.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list: 'כשר', 'טבעוני', 'ללא גלוטן', 'ללא חלב', 'דל פחממות', 'קיטו', 'פלאו', 'ים-תיכוני', 'אסיאתי', 'מקסיקני', 'איטלקי'\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL from spoonacular only, if you dont find a proper photo use this url: https://redthread.uoregon.edu/files/original/affd16fd5264cab9197da4cd1a996f820e601ee4.png .\n\n",
+    "output": {
+      "title": "סלט קינואה חם עם בטטה וקולורבי",
+      "photoUrl": "https://spoonacular.com/recipeImages/637563-312x231.jpg",
+      "tags": [
+        "צמחוני",
+        "ים-תיכוני",
+        "ללא גלוטן"
+      ],
+      "category": "סלט",
+      "difficulty": "קל",
+      "prepTime": "30 דק",
+      "steps": [
+        "חותכים את הבטטה והקולורבי לקוביות קטנות.",
+        "מבשלים את הקינואה לפי הוראות היצרן.",
+        "מחממים שמן זית במחבת, מוסיפים את הבטטה והקולורבי ומטגנים עד להזהבה.",
+        "מוסיפים את הקינואה המבושלת, מלח, פלפל שחור וזעתר. מערבבים היטב.",
+        "סוחטים מיץ מחצי לימון ומוסיפים לסלט.",
+        "מגישים חם או בטמפרטורת החדר."
+      ],
+      "ingredients": [
+        {
+          "name": "בטטה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "קולורבי",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "קינואה",
+          "qty": 1,
+          "unit": "כוס"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 2,
+          "unit": "כף"
+        },
+        {
+          "name": "מלח",
+          "qty": 1,
+          "unit": "כפית"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 0.5,
+          "unit": "כפית"
+        },
+        {
+          "name": "זעתר",
+          "qty": 1,
+          "unit": "כפית"
+        },
+        {
+          "name": "לימון",
+          "qty": 0.5,
+          "unit": "יחידה"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 4977,
+    "createdAt": "2025-09-25T10:08:47.442Z",
+    "userId": null
+  },
+  {
+    "kind": "extractIngredients",
+    "inputHash": "7481f7008e3b0ae5ec3ed02be762ce944fa6f7f3f85b0bbd13704cceb2dcb650",
+    "input": "\nYou are a creative recipe generator. Generate ONE complete recipe strictly in JSON format using this structure:\n\n{\n  \"title\": \"string\",\n  \"photoUrl\": \"string\",\n  \"tags\": [\"string\"],\n  \"category\":\"string\",\n  \"difficulty\":\"string\",\n  \"prepTime\":\"string\",\n  \"steps\": [\"string\"],\n  \"ingredients\": [\n    {\n      \"name\": \"string\",\n      \"qty\": number,\n      \"unit\": \"ליטר|מ\"ל|ק\"ג|גרם|יחידה\"\n    }\n  ]\n}\n\nVALIDATION:\n\n- You may ONLY use ingredients from the following list: [\"בטטה\",\"קינואה\",\"תפוח עץ\",\"בצל\",\"כוסברה\",\"שמיר\",\"מלח\",\"פלפל שחור\",\"לימון\",\"שמן זית\",\"חזה עוף\",\"פטריות\",\"פלפל שחור גרגרים\",\"זעתר\",\"צלי כתף\",\"אורז\",\"רסק עגבניות\",\"מים\",\"כורכום\",\"פפריקה\",\"קישוא\",\"פלפל\",\"קולורבי\",\"ביצים\",\"פיתה\"].\n- DO NOT invent or use any ingredient outside of this list.\n- You MUST GENERATE RECIPE with one or more of the following units: ליטר, מ\"ל, ק\"ג, גרם, יחידה, כוס, כף, כפית.\n- Do NOT use any other unit outside this list.\n- The prepTime has to be in minutes (eg. 30 דק).\n- There is only 3 difficulties: (קל, בינוני או קשה).\n- Choose a category from the given list:'ארוחת בוקר', 'ארוחת צהריים', 'ארוחת ערב', 'קינוח', 'נשנוש', 'מנת פתיחה', 'מרק', 'סלט', 'פסטה', 'בשרי', 'דגים', 'צמחוני'.\n- All text must be entirely in Hebrew.\n- Include 1–3 relevant tags from the predefined list: 'כשר', 'טבעוני', 'ללא גלוטן', 'ללא חלב', 'דל פחממות', 'קיטו', 'פלאו', 'ים-תיכוני', 'אסיאתי', 'מקסיקני', 'איטלקי'\n- Provide 3–6 realistic preparation steps.\n- Include at least one dietary tag.\n- Provide a realistic photo URL from spoonacular only, if you dont find a proper photo use this url: https://redthread.uoregon.edu/files/original/affd16fd5264cab9197da4cd1a996f820e601ee4.png .\n\n",
+    "output": {
+      "title": "קינואה עם בטטה ותפוח עץ אפויים",
+      "photoUrl": "https://spoonacular.com/recipeImages/716440-556x370.jpg",
+      "tags": [
+        "צמחוני",
+        "ללא גלוטן",
+        "ים-תיכוני"
+      ],
+      "category": "ארוחת צהריים",
+      "difficulty": "קל",
+      "prepTime": "30 דק",
+      "steps": [
+        "חותכים את הבטטה, תפוח העץ ובצל לקוביות קטנות.",
+        "מערבבים את הקוביות בקערה עם שמן זית, מלח, פלפל שחור, זעתר וכורכום.",
+        "מוסיפים את הקינואה ומערבבים היטב.",
+        "מעבירים לתבנית אפייה ומשרים בתנור שחומם מראש ל-200 מעלות למשך 25-30 דקות, או עד שהבטטה רכה.",
+        "מגישים חם."
+      ],
+      "ingredients": [
+        {
+          "name": "בטטה",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "קינואה",
+          "qty": 1,
+          "unit": "כוס"
+        },
+        {
+          "name": "תפוח עץ",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "בצל",
+          "qty": 1,
+          "unit": "יחידה"
+        },
+        {
+          "name": "שמן זית",
+          "qty": 2,
+          "unit": "כף"
+        },
+        {
+          "name": "מלח",
+          "qty": 1,
+          "unit": "כפית"
+        },
+        {
+          "name": "פלפל שחור",
+          "qty": 0.5,
+          "unit": "כפית"
+        },
+        {
+          "name": "זעתר",
+          "qty": 1,
+          "unit": "כפית"
+        },
+        {
+          "name": "כורכום",
+          "qty": 0.5,
+          "unit": "כפית"
+        }
+      ]
+    },
+    "model": "gemini-1.5-flash",
+    "latencyMs": 4348,
+    "createdAt": "2025-09-25T10:44:29.351Z",
+    "userId": null
   }
 ]
