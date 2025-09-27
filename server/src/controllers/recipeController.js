@@ -19,7 +19,7 @@ export const getAllRecipes = async (req, res) => {
         }
 
         const recipes = await Recipe.find(query)
-            .select('title photoUrl tags steps ingredients')
+            .select('title photoUrl tags category difficulty prepTime steps ingredients')
             .populate('ingredients.ingredientId', 'name')
             .limit(limitNum)
             .lean();
