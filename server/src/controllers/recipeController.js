@@ -60,20 +60,52 @@ export const createRecipe = async (req, res) => {
             return res.status(400).json({ success: false, message: 'Title and at least one ingredient are required' });
         }
 
-        // Convert ingredient names to ObjectIds
+        // Convert ingredient names to ObjectIds, create missing ingredients
         const ingredientDocs = [];
+        const missingIngredients = [];
+        
         for (const ing of ingredients) {
             // ing should be { name, qty, unit }
-            const ingredientDoc = await Ingredient.findOne({ canonicalName: ing.name });
-            if (!ingredientDoc) {
-                return res.status(400).json({ success: false, message: `Ingredient not found: ${ing.name}` });
-            }
-            ingredientDocs.push({
-                ingredientId: ingredientDoc._id,
-                name: ing.name,
-                qty: ing.qty,
-                unit: ing.unit
+            let ingredientDoc = await Ingredient.findOne({ 
+                $or: [
+                    { canonicalName: ing.name },
+                    { name: ing.name }
+                ]
             });
+            
+            if (!ingredientDoc) {
+                // Create missing ingredient automatically
+                try {
+                    ingredientDoc = new Ingredient({
+                        name: ing.name,
+                        canonicalName: ing.name.toLowerCase(),
+                        dept: 'אחר'  // default department
+                    });
+                    await ingredientDoc.save();
+                    console.log(`Created new ingredient: ${ing.name}`);
+                } catch (ingredientError) {
+                    console.error(`Error creating ingredient ${ing.name}:`, ingredientError);
+                    missingIngredients.push(ing.name);
+                    // Continue with text-only ingredient if creation fails
+                }
+            }
+            
+            if (ingredientDoc) {
+                ingredientDocs.push({
+                    ingredientId: ingredientDoc._id,
+                    ingredientName: ing.name,  // Fixed: use ingredientName to match schema
+                    qty: ing.qty,
+                    unit: ing.unit
+                });
+            } else {
+                // Add as text-only ingredient if creation failed
+                ingredientDocs.push({
+                    ingredientName: ing.name,
+                    qty: ing.qty,
+                    unit: ing.unit,
+                    textOnly: true
+                });
+            }
         }
 
         const formattedTags = Array.isArray(tags) ? tags : (tags ? tags.split(',') : []);
@@ -94,39 +126,75 @@ export const createRecipe = async (req, res) => {
             .populate('ingredients.ingredientId', 'name')
             .select('-__v')
             .lean();
-        res.status(201).json({ success: true, data: populatedRecipe });
+            
+        // Prepare response message
+        let message = 'המתכון נוסף בהצלחה!';
+        if (missingIngredients.length > 0) {
+            message += ` ${missingIngredients.length} מרכיבים לא יכלו להיווצר: ${missingIngredients.join(', ')}`;
+        }
+        
+        res.status(201).json({ 
+            success: true, 
+            data: populatedRecipe,
+            message: message
+        });
 
     } catch (error) {
         console.error(error);
         res.status(500).json({ success: false, message: 'Server Error' });
     }
-}; // works
+};
 
 export const generateRecipe = async (req, res) => {
     try {
         const raw =
-            typeof req.body?.recipeText === 'string' ? req.body.recipeText :
-                typeof req.body?.text === 'string' ? req.body.text :
-                    typeof req.query?.recipeText === 'string' ? req.query.recipeText :
-                        typeof req.query?.text === 'string' ? req.query.text :
-                            '';
+            typeof req.body?.prompt === 'string' ? req.body.prompt :
+                typeof req.body?.recipeText === 'string' ? req.body.recipeText :
+                    typeof req.body?.text === 'string' ? req.body.text :
+                        typeof req.query?.recipeText === 'string' ? req.query.recipeText :
+                            typeof req.query?.text === 'string' ? req.query.text :
+                                '';
         const userText = raw.slice(0, 2000);
 
         const generated = userText ? await RecipeCreationService.createFromText(userText) : await RecipeCreationService.createFromText()
         console.log(generated)
         console.log("finished print generated")
-        // Convert ingredient names to ObjectIds
+        // Convert ingredient names to ObjectIds, create missing ingredients
         const ingredientDocs = [];
         for (const ing of generated.ingredients) {
-            const ingredientDoc = await Ingredient.findOne({ canonicalName: ing.name });
+            let ingredientDoc = await Ingredient.findOne({ canonicalName: ing.name });
             if (!ingredientDoc) {
-                return res.status(400).json({ success: false, message: `Ingredient not found: ${ing.name}` });
+                // Create missing ingredient
+                try {
+                    ingredientDoc = new Ingredient({
+                        name: ing.name,
+                        canonicalName: ing.name.toLowerCase(),
+                        dept: 'אחר'
+                    });
+                    await ingredientDoc.save();
+                    console.log(`Created new ingredient for AI recipe: ${ing.name}`);
+                } catch (ingredientError) {
+                    console.error(`Error creating ingredient ${ing.name}:`, ingredientError);
+                    // Continue with text-only ingredient if creation fails
+                }
             }
-            ingredientDocs.push({
-                ingredientId: ingredientDoc._id,
-                qty: ing.qty,
-                unit: ing.unit
-            });
+            
+            if (ingredientDoc) {
+                ingredientDocs.push({
+                    ingredientId: ingredientDoc._id,
+                    ingredientName: ing.name,  // Fixed: use ingredientName to match schema
+                    qty: ing.qty,
+                    unit: ing.unit
+                });
+            } else {
+                // Add as text-only ingredient
+                ingredientDocs.push({
+                    ingredientName: ing.name,  // Fixed: use ingredientName to match schema
+                    qty: ing.qty,
+                    unit: ing.unit,
+                    textOnly: true
+                });
+            }
         }
 
         const newRecipe = new Recipe({
@@ -145,7 +213,10 @@ export const generateRecipe = async (req, res) => {
             .populate('ingredients.ingredientId', 'name')
             .select('-__v')
             .lean();
-        console.log(populatedRecipe)
+        
+        console.log('Saved AI recipe:', populatedRecipe);
+        console.log('AI recipe ingredients:', populatedRecipe.ingredients);
+        
         res.status(201).json({ success: true, data: populatedRecipe });
 
     } catch (error) {

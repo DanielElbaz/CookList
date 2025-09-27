@@ -8,7 +8,8 @@ const DEPTS = [
   "מצרכים יבשים",
   "מוצרים קפואים",
   "משקאות",
-  "מוצרי בית"
+  "מוצרי בית",
+  "אחר"
 ];
 
 const IngredientSchema = new Schema({

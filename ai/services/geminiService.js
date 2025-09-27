@@ -9,7 +9,7 @@ class GeminiService {
       throw new Error("GEMINI_API_KEY is not set in environment variables.");
     }
     this.client = new GoogleGenerativeAI(apiKey);
-    this.model = this.client.getGenerativeModel({ model: "gemini-1.5-flash" });
+    this.model = this.client.getGenerativeModel({ model: "gemini-2.5-flash" });
   }
 
   async generate(prompt) {

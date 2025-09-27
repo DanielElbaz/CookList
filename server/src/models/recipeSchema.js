@@ -1,7 +1,7 @@
 import { Schema, model, Types } from "mongoose";
 
 const IngredientRefSchema = new Schema({
-    ingredientId: { type: Types.ObjectId, ref: 'Ingredient', required: true },
+    ingredientId: { type: Types.ObjectId, ref: 'Ingredient' },
     ingredientName: { type: String, ref: 'Ingredient', trim: true },
     qty: { type: Number, required: true, min: 0 },
     unit: { type: String, trim: true }
